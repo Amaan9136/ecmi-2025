@@ -4,7 +4,7 @@
 
 # ECMI Repository
 
-Welcome to the official repository for **ECMI**, the ECE department's dynamic webpage for hosting and managing events, news updates, and certificates 
+Welcome to the official repository for **ECMI**, the ECE - ECMI webpage.
 --- 
 
 ## About The Project
