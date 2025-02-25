@@ -5,7 +5,7 @@ import SectionTitle from "../helpers/SectionTitle";
 
 const ConferenceSection = () => {
   const { scrollY } = useScroll();
-  const [scrollRanges, setScrollRanges] = useState([8000, 8200]);
+  const [scrollRanges, setScrollRanges] = useState([6200, 6400]);
 
   useEffect(() => {
     const updateRanges = () => {
@@ -38,11 +38,11 @@ const ConferenceSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10  m-12 pt-16 pb-28">
+      <motion.div style={{ opacity: sectionOpacity }} className="relative z-10  m-12 pt-16 pb-28">
         {/* About The Conference */}
         <div>
           <SectionTitle title="About The Conference" />
-            <motion.div style={{ opacity: sectionOpacity }} className="w-full my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-blue-700">
+            <div  className="w-full my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-blue-700">
               <p className="leading-relaxed">
                 The <span className="font-semibold text-blue-400"> The International Conference on Emerging Research in Smart Electronics, Communication
  Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
@@ -61,7 +61,7 @@ const ConferenceSection = () => {
  conference aims to inspire groundbreaking research and foster new partnerships.
  Participants will have the opportunity to explore emerging trends, engage in interdisciplinary
  discussions, and contribute to shaping the future of technology and innovation.</p>
-            </motion.div>
+            </div>
 
 
         </div>
@@ -164,7 +164,7 @@ const ConferenceSection = () => {
 
           </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 };

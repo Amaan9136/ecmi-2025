@@ -18,7 +18,7 @@ const ContactUs = () => {
     { name: "Dr. Goutham M A", contact: "9448554971", color: "#FF6EC7" },
   ];
 
-  const largeScreenRanges = [18500, 19500];
+  const largeScreenRanges = [10100, 10200];
   const smallScreenRanges = [13500, 13600];
 
   const { scrollY } = useScroll();

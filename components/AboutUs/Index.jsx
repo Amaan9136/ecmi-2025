@@ -71,7 +71,7 @@ const data = [
 
 
 const AboutUs = () => {
-  const largeScreenRanges = [5700, 5900]
+  const largeScreenRanges = [3000, 3100]
   const smallScreenRanges = [8100, 8200]
 
   const { scrollY } = useScroll();

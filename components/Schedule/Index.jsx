@@ -8,7 +8,7 @@ import SectionTitle from "../helpers/SectionTitle";
 import { importantDates, paymentDetails, registrationDetails } from "./schedule";
 
 const Schedule = () => {
-  const largeScreenRanges = [8600, 9900];
+  const largeScreenRanges = [9100, 9200];
   const smallScreenRanges = [8300, 9400];
 
   const { scrollY } = useScroll();

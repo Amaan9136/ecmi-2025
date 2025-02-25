@@ -6,13 +6,13 @@ const conferenceCommittee = {
   chiefPatron: "Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
   patron: ["Sri Gunanatha Swamiji", "Dr. Vidya Shankar", "Dr. C K Subbaraya"],
   generalChair: "Dr. C T Jayadeva",
-  organizingChair: "Dr. Goutham M.A.",
-  conferenceChair: "Dr. Suma M.",
-  conferenceCoChair: ["Prof Madhuprakash R", "Prof Nagaveni C.R", "Prof RaghuKumar B S"],
-  publicationChair: ["Dr. Anil Kumar C", "Prof Mahesh D S", "Prof Divya G S", "Prof Manjukla U R"],
-  publicityChair: ["Prof Harish Kumar C R", "Prof Chandrakala", "Prof Megha Shree M", "Prof Girish S"],
-  webManagementCommittee: ["Prof Rajappa H S", "Prof. Linet D’Souza"],
-  financeChairCommittee: ["Prof Anitha K T", "Prof Tasmia Namreen"],
+  organizingChair: "Dr. Goutham M A",
+  conferenceChair: "Dr. Suma M",
+  conferenceCoChair: ["Prof. Madhuprakash R", "Prof. Nagaveni C.R", "Prof. RaghuKumar B S"],
+  publicationChair: ["Dr. Anil Kumar C", "Prof. Mahesh D S", "Prof. Divya G S", "Prof. Manjukla U R"],
+  publicityChair: ["Prof. Harish Kumar C R", "Prof. Chandrakala", "Prof. Megha Shree M", "Prof. Girish S"],
+  webManagementCommittee: ["Prof. Rajappa H S", "Prof. Linet D’Souza"],
+  financeChairCommittee: ["Prof. Anitha K T", "Prof. Tasmia Namreen"],
 };
 
 const conferenceCommittee2 = {
@@ -65,7 +65,7 @@ const conferenceCommittee3 = {
 
 const Committee = () => {
   const { scrollY } = useScroll();
-  const sectionOpacity = useTransform(scrollY, [6500, 8500], [1, 0.3]);
+  const sectionOpacity = useTransform(scrollY, [6400, 6500], [1, 0.3]);
 
   return (
     <section className="relative lg:mb-28 flex flex-col" id="committee">
