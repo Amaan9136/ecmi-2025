@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="images/logos/aignite-logo.png" alt="Aignite Logo" width="500">
+  <img src="images/logos/ECMI_Logo.png" alt="ECMI Logo" width="500">
 </p>
 
-# Aignite Repository
+# ECMI Repository
 
-Welcome to the official repository for **Aignite**, the AIML department's dynamic webpage for hosting and managing events, news updates, and certificates 
+Welcome to the official repository for **ECMI**, the AIML department's dynamic webpage for hosting and managing events, news updates, and certificates 
 --- 
 
 ## About The Project
 
-**Aignite** serves as the central platform for the AIML department's events and updates. Built to enhance accessibility and ease of use, the webpage provides tools for:
+**ECMI** serves as the central platform for the AIML department's events and updates. Built to enhance accessibility and ease of use, the webpage provides tools for:
 
-Visit [Aignite.live](https://aignite.live) for a live demonstration of the platform and its features.
+Visit [ECMI.live](https://ECMI.live) for a live demonstration of the platform and its features.
 
 ---
 
@@ -37,7 +37,7 @@ Visit [Aignite.live](https://aignite.live) for a live demonstration of the platf
 
 ## Built With
 
-Aignite is powered by modern web technologies to ensure a seamless and responsive experience:
+ECMI is powered by modern web technologies to ensure a seamless and responsive experience:
 
 - [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 - [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
