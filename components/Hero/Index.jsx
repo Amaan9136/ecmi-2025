@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
-import Foreground from "../../images/sectionsAssets/Fore-Ground.png";
+import Foreground from "../../images/sectionsAssets/ForeGround.png";
 import BackGround from "../../images/sectionsAssets/Hero-background-6.png";
 import balag from "../../images/speakers/balagangaswami.png";
 import Nirma from "../../images/speakers/nirmalanandaswami.png";
