@@ -4,12 +4,12 @@
 
 # ECMI Repository
 
-Welcome to the official repository for **ECMI**, the AIML department's dynamic webpage for hosting and managing events, news updates, and certificates 
+Welcome to the official repository for **ECMI**, the ECE department's dynamic webpage for hosting and managing events, news updates, and certificates 
 --- 
 
 ## About The Project
 
-**ECMI** serves as the central platform for the AIML department's events and updates. Built to enhance accessibility and ease of use, the webpage provides tools for:
+**ECMI** serves as the central platform for the ECE department's events and updates. Built to enhance accessibility and ease of use, the webpage provides tools for:
 
 Visit [ECMI.live](https://ECMI.live) for a live demonstration of the platform and its features.
 
