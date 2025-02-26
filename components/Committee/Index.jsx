@@ -3,17 +3,135 @@ import SectionTitle from "../helpers/SectionTitle";
 import CommitteeCard from "./CommitteeCard";
 
 const conferenceCommittee = {
-  chiefPatron: "Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
-  patron: ["Sri Gunanatha Swamiji", "Dr. Vidya Shankar", "Dr. C K Subbaraya"],
-  generalChair: "Dr. C T Jayadeva",
-  organizingChair: "Dr. Goutham M A",
-  conferenceChair: "Dr. Suma M",
-  conferenceCoChair: ["Prof. Madhuprakash R", "Prof. Nagaveni C.R", "Prof. RaghuKumar B S"],
-  publicationChair: ["Dr. Anil Kumar C", "Prof. Mahesh D S", "Prof. Divya G S", "Prof. Manjukla U R"],
-  publicityChair: ["Prof. Harish Kumar C R", "Prof. Chandrakala", "Prof. Megha Shree M", "Prof. Girish S"],
-  webManagementCommittee: ["Prof. Rajappa H S", "Prof. Linet D’Souza"],
-  financeChairCommittee: ["Prof. Anitha K T", "Prof. Tasmia Namreen"],
+  chiefPatron: [
+    {
+      name: "Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
+      designation: "Pontiff, Sri Adichunchanagiri Mahasamstana Math, President \n Sri Adichunchanagiri Shikshana Trust ®",
+    },
+  ],
+  patron: [
+    {
+      name: "Sri Sri Gunanatha Swamiji",
+      designation: "Sri Adichunchanagiri Mahasamsthana Math, Chikkamagaluru Branch, Sringeri",
+    },
+    {
+      name: "Dr. N S Ramegowda",
+      designation: "CEO, Sri Adichunchanagiri Shikshana Trust ®",
+      place: "",
+    },
+    {
+      name: "Dr. Vidya Shankar",
+      designation: "Vice Chancellor, VTU",
+      place: "Belagavi",
+    },
+    {
+      name: "Dr. C K Subbaraya",
+      designation: "Registrar, Adichunchanagiri University",
+      place: "B G Nagara",
+    },
+  ],
+  generalChair: [{
+    name: "Dr. C T Jayadeva",
+    designation: "Principal, AIT",
+    place: "",
+  }],
+  organizingChair: [{
+    name: "Dr. Goutham M A",
+    designation: "Professor and Head",
+    place: "Dept. of ECE, AIT",
+  }],
+  conferenceChair: [{
+    name: "Dr. Suma M",
+    designation: "Associate Professor",
+    place: "Dept. of ECE, AIT",
+  }],
+  conferenceCoChair: [
+    {
+      name: "Prof. Madhu Prakash R",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Nagaveni C R",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. RaghuKumar B S",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+  ],
+  publicationChair: [
+    {
+      name: "Dr. Anil Kumar C",
+      designation: "Associate Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Mahesh D S",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Divya G S",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Manjula U R",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+  ],
+  publicityChair: [
+    {
+      name: "Prof. Harish Kumar C R",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Chandrakala",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Megha Shree M",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Girish S",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+  ],
+  webManagementCommittee: [
+    {
+      name: "Prof. Rajappa H S",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Linet D’Souza",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+  ],
+  financeChairCommittee: [
+    {
+      name: "Prof. Anitha K T",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+    {
+      name: "Prof. Tasmia Namreen",
+      designation: "Assistant Professor",
+      place: "Dept. of ECE, AIT",
+    },
+  ],
 };
+
 
 const conferenceCommittee2 = {
   nationalAdvisoryCommittee: [
@@ -60,28 +178,27 @@ const conferenceCommittee3 = {
     { name: "Dr. Chawki Djeddi", institution: "Larbi Tebessi University, Algeria" },
     { name: "Dr. George Ghinea", designation: "Professor of Computer Science", institution: "Brunel University, London" }
   ],
-
 }
 
 const Committee = () => {
   const { scrollY } = useScroll();
-  const sectionOpacity = useTransform(scrollY, [6400, 6500], [1, 0.3]);
+  const sectionOpacity = useTransform(scrollY, [7200, 7300], [1, 0.3]);
 
   return (
     <section className="relative lg:mb-28 flex flex-col" id="committee">
       <motion.div style={{ opacity: sectionOpacity }} className="section-container pt-10">
         <SectionTitle title={"Committee Members"} />
-        <div className="flex flex-wrap justify-center gap-6 mt-10 px-10">
+        <div className="flex flex-wrap justify-center gap-6 mt-10 px-6">
           {Object.entries(conferenceCommittee).map(([title, members]) => (
             <CommitteeCard key={title} title={title} members={members} />
           ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-6 mt-10 px-10">
+        <div className="flex flex-wrap justify-center gap-6 mt-10 px-6">
           {Object.entries(conferenceCommittee2).map(([title, members]) => (
             <CommitteeCard key={title} title={title} members={members} />
           ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-6 mt-10 px-10">
+        <div className="flex flex-wrap justify-center gap-6 mt-10 px-6">
           {Object.entries(conferenceCommittee3).map(([title, members]) => (
             <CommitteeCard key={title} title={title} members={members} />
           ))}
@@ -89,6 +206,8 @@ const Committee = () => {
       </motion.div>
     </section>
   );
+
+
 };
 
 

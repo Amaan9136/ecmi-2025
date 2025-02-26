@@ -112,28 +112,46 @@ const AboutUs = () => {
           style={{ opacity: sectionOpacity }}
           className="section-container pt-6 cursor-pointer"
         >
-          <SectionTitle title={"About Us"} />
+          <SectionTitle title="About Us" />
           {data.map((element, index) => (
-            <>
-          {element.title && (
-            <h2 className="mt-[3rem] text-white text-xl lg:text-2xl font-bold tracking-wide border-b-4 pb-1 mb-1 border-yellow-400  uppercase mx-36 text-justify">
-              {element.title}
-            </h2>
-          )}
-              <div key={index} className={` ml-36 mb-6 flex flex-col gap-10 items-center lg:flex-row`}>
-                <Image src={element.image} width={550} height={550} alt={element.title+" 1"} className="rounded-sm shadow-md mt-2" />
-                <Image src={element.image2} width={550} height={550} alt={element.title+" 2"} className="rounded-sm shadow-md mt-2" />
+            <div key={index} className="flex flex-col items-center gap-6">
+              {element.title && (
+                <h2 className="mt-[3rem] text-white text-xl lg:text-2xl font-bold tracking-wide border-b-4 pb-1 mb-1 border-yellow-400 uppercase text-left w-full max-w-5xl">
+                  {element.title}
+                </h2>
+              )}
+
+              {/* Image Container - Grid for Responsive Layout */}
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
+                <Image
+                  src={element.image}
+                  width={550}
+                  height={550}
+                  alt={element.title + " 1"}
+                  className="rounded-sm shadow-md mt-2 w-full"
+                />
+                <Image
+                  src={element.image2}
+                  width={550}
+                  height={550}
+                  alt={element.title + " 2"}
+                  className="rounded-sm shadow-md mt-2 w-full"
+                />
               </div>
-              <div className={`flex flex-col gap-2 flex-1 `}>
+
+              {/* Description Section */}
+              <div className="w-full max-w-5xl text-left text-justify">
                 <ParagSection2
                   title={element.title}
                   paragraph={element.paragraph}
                   highlights={element.highlights}
                 />
               </div>
-            </>
+            </div>
           ))}
         </motion.div>
+
+
       </div>
     </section>
   );

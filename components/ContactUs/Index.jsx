@@ -59,11 +59,16 @@ const ContactUs = () => {
         Click the Contacts below to <span className="text-emerald-300">Chat in WhatsApp</span>
       </Animate>
 
-      <Animate delay={12} x={50} y={-50} className="flex flex-wrap justify-center space-between">
+      <Animate
+        delay={12}
+        x={50}
+        y={-50}
+        className="flex flex-wrap justify-center items-center sm:justify-center sm:items-center space-between"
+      >
         {contactData.map((cont, index) => (
-          <motion.div key={index} style={{ opacity: contactOpacity }}>
+          <motion.div key={index} style={{ opacity: contactOpacity }} className="w-full sm:w-auto flex justify-center">
             <Tilt
-              className="cursor-pointer rounded-lg p-4 lg:p-8 group"
+              className="cursor-pointer rounded-lg p-4 lg:p-8 group text-center"
               tiltMaxAngleY={40}
               transitionSpeed={350}
               glareEnable={true}
@@ -75,10 +80,17 @@ const ContactUs = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold leading-tight lg:leading-snug">
                   {cont.name}
                 </h2>
-                <p style={{ color: cont.color }} className="text-sm lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden">
+                <p
+                  style={{ color: cont.color }}
+                  className="text-sm lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden"
+                >
                   {cont.contact}
                 </p>
-                <span className="group-hover:opacity-100 opacity-0 text-sm lg:text-xl font-semibold text-center" style={{ color: cont.color }}>
+
+                <span
+                  className="group-hover:opacity-100 opacity-0 text-sm lg:text-xl font-semibold block"
+                  style={{ color: cont.color }}
+                >
                   Chat With {cont.name}
                 </span>
               </Link>

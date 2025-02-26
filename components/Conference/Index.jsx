@@ -5,14 +5,14 @@ import SectionTitle from "../helpers/SectionTitle";
 
 const ConferenceSection = () => {
   const { scrollY } = useScroll();
-  const [scrollRanges, setScrollRanges] = useState([6200, 6400]);
+  const [scrollRanges, setScrollRanges] = useState([9400, 9600]);
 
   useEffect(() => {
     const updateRanges = () => {
       if (window.innerWidth <= 1200) {
         setScrollRanges([13000, 13200]); // Mobile
       } else {
-        setScrollRanges([8000, 8200]); // Desktop
+        setScrollRanges([9400, 9600]); // Desktop
       }
     };
 
@@ -38,38 +38,36 @@ const ConferenceSection = () => {
       </div>
 
       {/* Main Content */}
-      <motion.div style={{ opacity: sectionOpacity }} className="relative z-10  m-12 pt-16 pb-28">
+      <motion.div style={{ opacity: sectionOpacity }} className="relative z-10 pt-16 pb-28">
         {/* About The Conference */}
-        <div>
+        <div className="m-0 p-0">
           <SectionTitle title="About The Conference" />
-            <div  className="w-full my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-blue-700">
-              <p className="leading-relaxed">
-                The <span className="font-semibold text-blue-400"> The International Conference on Emerging Research in Smart Electronics, Communication
- Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
- academicians, industry professionals, and students to present and discuss the latest advancements,
- innovations, and challenges in these rapidly evolving domains.
-              </p>
-              <p className="mt-4">This conference aims to foster collaboration and knowledge exchange, focusing on cutting-edge topics such as:</p>
-              <ul className="list-disc list-inside mt-2">
-                <li>Smart electronics and embedded systems.</li>
-                <li>Emerging communication technologies, including IoT and 5G/6G.</li>
-                <li>Advanced informatics for data-driven solutions.</li>
-                <li>Breakthroughs in machine intelligence and artificial intelligence applications.</li>
-              </ul>
-              <p className="mt-4 font-bold text-blue-400"> ECMI-2025 welcomes contributions in the form of original research papers, innovative prototypes,
- and industrial case studies. By bringing together experts from academia and industry, the
- conference aims to inspire groundbreaking research and foster new partnerships.
- Participants will have the opportunity to explore emerging trends, engage in interdisciplinary
- discussions, and contribute to shaping the future of technology and innovation.</p>
-            </div>
-
-
+          <div className="w-full my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-purple-400">
+            <p className="leading-relaxed">
+              The <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics, Communication
+                Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
+              academicians, industry professionals, and students to present and discuss the latest advancements,
+              innovations, and challenges in these rapidly evolving domains.
+            </p>
+            <p className="mt-4">This conference aims to foster collaboration and knowledge exchange, focusing on cutting-edge topics such as:</p>
+            <ul className="list-disc list-inside mt-2">
+              <li>Smart electronics and embedded systems.</li>
+              <li>Emerging communication technologies, including IoT and 5G/6G.</li>
+              <li>Advanced informatics for data-driven solutions.</li>
+              <li>Breakthroughs in machine intelligence and artificial intelligence applications.</li>
+            </ul>
+            <p className="mt-4 font-bold text-yellow-400"> ECMI-2025 welcomes contributions in the form of original research papers, innovative prototypes,
+              and industrial case studies. By bringing together experts from academia and industry, the
+              conference aims to inspire groundbreaking research and foster new partnerships.
+              Participants will have the opportunity to explore emerging trends, engage in interdisciplinary
+              discussions, and contribute to shaping the future of technology and innovation.</p>
+          </div>
         </div>
 
         {/* Technical Tracks */}
-        <div>
+        <div className="m-0 p-0 mt-2">
           <SectionTitle title="Technical Tracks" />
-          <div className="my-6 flex gap-10">
+          <div className="my-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {[
               {
                 title: "Smart Electronics",
@@ -84,7 +82,7 @@ const ConferenceSection = () => {
                   "Mixed-signal IC design and testing.",
                   "Hardware security and trusted computing.",
                 ],
-                icon: <FaMicrochip size={20} className="text-blue-400" />,
+                icon: <FaMicrochip size={20} className="text-yellow-400" />,
               },
               {
                 title: "Communication Technologies",
@@ -99,7 +97,7 @@ const ConferenceSection = () => {
                   "Quantum communication technologies.",
                   "Edge and fog computing for communication networks.",
                 ],
-                icon: <FaNetworkWired size={20} className="text-blue-400" />,
+                icon: <FaNetworkWired size={20} className="text-yellow-400" />,
               },
               {
                 title: "Informatics",
@@ -114,7 +112,7 @@ const ConferenceSection = () => {
                   "E-governance and smart city informatics.",
                   "Green computing and sustainable information systems.",
                 ],
-                icon: <FaDatabase size={20} className="text-blue-400" />,
+                icon: <FaDatabase size={20} className="text-yellow-400" />,
               },
               {
                 title: "Machine Intelligence",
@@ -129,40 +127,48 @@ const ConferenceSection = () => {
                   "AI in healthcare: Diagnosis, drug discovery, and personalized medicine.",
                   "Federated learning and distributed AI models.",
                 ],
-                icon: <FaRobot size={20} className="text-blue-400" />,
+                icon: <FaRobot size={20} className="text-yellow-400" />,
               },
             ].map((track, index) => (
-              <div  className="p-4 bg-gray-900 text-white rounded-xl shadow-sm border-l-4 border-blue-700 cursor-pointer">
-                <div className="flex items-center space-x-2">{track.icon}<h3 className="font-semibold">{track.title}</h3></div>
-                <ul className="p-4 pb-0 text-md list-disc list-outside">{track.description.map((point, idx) => (<li key={idx}>{point}</li>))}</ul>
+              <div key={index} className="p-4 bg-gray-900 text-white rounded-xl shadow-sm border-l-4 border-purple-400 cursor-pointer">
+                <div className="flex items-center space-x-2">
+                  {track.icon}
+                  <h3 className="font-semibold">{track.title}</h3>
+                </div>
+                <ul className="p-4 pb-0 text-md list-disc list-outside">
+                  {track.description.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
-          {/* Call for Papers Section */}
-          <div className="w-full">
-            <SectionTitle title="Call for Papers" />
-            <div
-              className="mx-auto"
-            >
-              <div className="bg-gray-900 text-white p-6 rounded-xl border-l-4 border-blue-700 mt-6">
-                <p className="text-md">
-                  <span className="font-semibold text-blue-400">ECMI-2025</span> invites the submission of original, high-quality research papers that have not been previously published.
-                </p>
 
-                <p className="mt-4 text-md">
-                  All accepted and presented papers will be submitted to
-                  <span className="font-semibold text-blue-400"> IEEE</span> for potential inclusion in the
-                  <span className="font-semibold text-blue-400"> Xplore Digital Library</span>.
-                </p>
+        {/* Call for Papers Section */}
+        <div className="w-full m-0 p-0 mt-2">
+          <SectionTitle title="Call for Papers" />
+          <div
+            className="mx-auto"
+          >
+            <div className="bg-gray-900 text-white p-6 rounded-xl border-l-4 border-purple-400 mt-6">
+              <p className="text-md">
+                <span className=" text-yellow-400">ECMI-2025</span> invites the submission of original, high-quality research papers that have not been previously published.
+              </p>
 
-                <p className="mt-4 text-md text-[#FF3131] font-semibold flex items-center">
-                  ⚠ ECMI-2025 takes plagiarism very seriously and considers it a professional misconduct.
-                </p>
-              </div>
+              <p className="mt-4 text-md">
+                All accepted and presented papers will be submitted to
+                <span className=" text-yellow-400"> IEEE</span> for potential inclusion in the
+                <span className=" text-yellow-400"> Xplore Digital Library</span>.
+              </p>
+
+              <p className="mt-4 text-md text-[#FF3131] font-bold flex items-center">
+                ⚠ ECMI-2025 takes plagiarism very seriously and considers it a professional misconduct.
+              </p>
             </div>
-
           </div>
+
+        </div>
 
       </motion.div>
     </section>

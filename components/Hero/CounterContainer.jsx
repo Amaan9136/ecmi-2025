@@ -20,7 +20,7 @@ const CounterContainer = ({ countDownLimit }) => {
         return () => clearInterval(timer)
     }, [countDownLimit])
   return (
-    <div className="flex grow ml-2 gap-3 w-[380px]">
+    <div className="flex grow gap-2">
         <CounterAtom delay={14} time="Days" timeleft={remainingTime.days}/>
         <CounterAtom delay={15} time="Hrs" timeleft={remainingTime.hours}/>
         <CounterAtom delay={16} time="Mins" timeleft={remainingTime.minutes}/>

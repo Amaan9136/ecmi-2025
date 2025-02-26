@@ -8,7 +8,7 @@ import SectionTitle from "../helpers/SectionTitle";
 import { importantDates, paymentDetails, registrationDetails } from "./schedule";
 
 const Schedule = () => {
-  const largeScreenRanges = [9100, 9200];
+  const largeScreenRanges = [10500, 10600];
   const smallScreenRanges = [8300, 9400];
 
   const { scrollY } = useScroll();
@@ -49,9 +49,12 @@ const Schedule = () => {
       <SectionTitle title="Schedule" />
 
 
-      <motion.div style={{ opacity: tableOpacity }} className="flex items-center mt-12 gap-3">
+      <motion.div
+        style={{ opacity: tableOpacity }}
+        className="flex flex-col sm:flex-row items-center mt-6 gap-6 sm:gap-4"
+      >
         {/* Important Dates Table */}
-        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 mb-6 max-w-xl w-full mx-auto">
+        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 w-full sm:max-w-xl mx-auto">
           <h2 className="bg-cyan-600 text-white text-center py-3 text-lg font-bold">
             📅 Important Dates
           </h2>
@@ -74,7 +77,7 @@ const Schedule = () => {
         </div>
 
         {/* Registration Details Table */}
-        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 max-w-xl w-full mx-auto">
+        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 w-full sm:max-w-xl mx-auto">
           <h2 className="bg-cyan-600 text-white text-center py-3 text-lg font-bold">
             📝 Registration Details
           </h2>
@@ -100,33 +103,29 @@ const Schedule = () => {
           </table>
         </div>
 
-
-      </motion.div>
-      <motion.div style={{ opacity: tableOpacity }} className="flex flex-col md:flex-row items-center justify-center mt-12 gap-6">
         {/* Payment Details Table */}
-        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 max-w-xl w-full">
+        <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden border border-gray-700 w-full sm:max-w-xl">
           <h2 className="bg-cyan-600 text-white text-center py-3 text-lg font-bold">
             💳 Payment Details
           </h2>
           <table className="border-collapse text-white w-full">
-  <tbody className="border border-gray-600 text-center">
-    {paymentDetails.map((detail, index) => (
-      <tr key={index}>
-        <td className="border border-gray-600 p-3 font-semibold">{detail.label}</td>
-        <td className="border border-gray-600 p-3">{detail.value}</td>
-        {index === 0 && (
-          <td className="border border-gray-600 p-3 text-center align-middle" rowSpan={paymentDetails.length}>
-            <Image src={Scanner} alt="QR Code" width={150} height={150} className="rounded-lg mx-auto" />
-          </td>
-        )}
-      </tr>
-    ))}
-  </tbody>
-</table>
-
+            <tbody className="border border-gray-600 text-center">
+              {paymentDetails.map((detail, index) => (
+                <tr key={index}>
+                  <td className="border border-gray-600 p-3 font-semibold">{detail.label}</td>
+                  <td className="border border-gray-600 p-3">{detail.value}</td>
+                  {index === 0 && (
+                    <td className="border border-gray-600 p-3 text-center align-middle" rowSpan={paymentDetails.length}>
+                      <Image src={Scanner} alt="QR Code" width={150} height={150} className="rounded-lg mx-auto" />
+                    </td>
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-
       </motion.div>
+
     </section>
   );
 };

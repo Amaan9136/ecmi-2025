@@ -13,9 +13,9 @@ const CounterAtom = ({ delay, time, timeleft, isHidden = false }) => {
         transitionSpeed={250}
         className="cursor-pointer">
         <Image src={Atom} height={100} width={100} />
-        <div className="absolute top-1/4 right-[40%] lg:right-[34%]">
-          <p style={{ color: "black" }} className="font-bold text-center text-base lg:text-xl text-[12px]">{timeleft}</p>
-          <p style={{ color: "black" }} className="text-center text-[10px] sm:text-sm">{time}</p>
+        <div className="absolute top-[1rem] right-[32%] ">
+          <p style={{ color: "black" }} className="font-bold text-center text-base text-xl">{timeleft}</p>
+          <p style={{ color: "black" }} className="text-center text-sm">{time}</p>
         </div>
       </Tilt>
     </Animate>
