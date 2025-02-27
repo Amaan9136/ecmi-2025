@@ -5,7 +5,7 @@ import CommitteeCard from "./CommitteeCard";
 const conferenceCommittee = {
   chiefPatron: [
     {
-      name: "Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
+      name: "His Holiness Jagadguru Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
       designation: "Pontiff, Sri Adichunchanagiri Mahasamstana Math, President \n Sri Adichunchanagiri Shikshana Trust ®",
     },
   ],
@@ -32,11 +32,11 @@ const conferenceCommittee = {
   ],
   generalChair: [{
     name: "Dr. C T Jayadeva",
-    designation: "Principal, AIT, Chikmagaluru",
+    designation: "Principal, AIT, Chikkamagaluru",
     place: "",
   }],
   organizingChair: [{
-    name: "Dr. Goutham M A",
+    name: "Prof. Goutham M A",
     designation: "Professor and Head",
     place: "Dept. of ECE, AIT",
   }],
@@ -135,28 +135,28 @@ const conferenceCommittee = {
 
 const conferenceCommittee2 = {
   nationalAdvisoryCommittee: [
-    { name: "Dr. B. E. Rangaswamy", designation: "Registrar", institution: "VTU, Belagavi" },
+    { name: "Dr. B E Rangaswamy", designation: "Registrar", institution: "VTU, Belagavi" },
     { name: "Prof. S Y Kulkarni", designation: "Professor", institution: "Bengaluru" },
     { name: "Dr. E S Chakravarthy", designation: "Advisor", institution: "ACU, BG Nagara, Mandya" },
     { name: "Dr. Karunakara Rai", designation: "Professor", institution: "NMIT, Bengaluru" },
     { name: "Dr. Puttamadappa", designation: "Registrar", institution: "Dayananda University, Bengaluru" },
-    { name: "Dr. G.T Raju", designation: "Principal", institution: "SJCIT, Chikkaballapura" },
-    { name: "Dr. Shobha B.N", designation: "Principal", institution: "BGSIT, BG Nagara, Mandya" },
-    { name: "Dr. Ravikumar G.K", designation: "Principal", institution: "BGSCET, Bengaluru" },
-    { name: "Dr. T.G Basavaraju", designation: "Professor", institution: "Govt Engineering College, Hassan" },
-    { name: "Dr. C.M Prashanth", designation: "Principal", institution: "MITE, Mangalore" },
+    { name: "Dr. G T Raju", designation: "Principal", institution: "SJCIT, Chikkaballapura" },
+    { name: "Dr. Shobha B N", designation: "Principal", institution: "BGSIT, BG Nagara, Mandya" },
+    { name: "Dr. Ravikumar G K", designation: "Principal", institution: "BGSCET, Bengaluru" },
+    { name: "Dr. T G Basavaraju", designation: "Professor", institution: "Govt Engineering College, Hassan" },
+    { name: "Dr. C M Prashanth", designation: "Principal", institution: "MITE, Mangalore" },
     { name: "Dr. Sivasankar Elango", designation: "Associate Professor, Dept. of Computer Science & Engineering", institution: "National Institute of Technology, Tiruchirappalli, Tamil Nadu" },
     { name: "Dr. Ananth Prabhu", designation: "Professor & Principal Investigator", institution: "Digital Forensics and Cyber Security Center of Excellence, Sahyadri College of Engineering & Management, Mangalore" },
     { name: "Dr. Gururaj H L", designation: "Associate Professor, Dept. of Information Technology", institution: "Manipal Institute of Technology, Bengaluru" },
     { name: "Dr. Vasudeva", designation: "Professor, Dept. of Information Science and Engineering", institution: "NMAMIT, Mangalore" },
     { name: "Dr. Naveen B", designation: "Associate Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" }
-],
+  ],
   technicalProgramCommittee: [
-    { name: "Prof. N. Shekar V. Shet", designation: "Professor and Head, Dept. of ECE", institution: "NITK, Surathkal" },
+    { name: "Prof. N. Shekar V Shet", designation: "Professor and Head, Dept. of ECE", institution: "NITK, Surathkal" },
     { name: "Dr. B Surendiran", designation: "Professor, Dept. of CSE", institution: "National Institute of Technology (NIT), Puducherry, Thiruvettakudy, Karaikal" },
     { name: "Dr. Geetha V", designation: "Associate Professor, Dept. of Information Technology", institution: "NITK, Surathkal" },
     { name: "Dr. Viswanath Talasila", designation: "Professor and Head, ETE", institution: "MSRIT, Bengaluru" },
-    { name: "Dr. Paritosh Peshwe",designation: "Professor", institution: "IIIT Nagpur, Dharward" },
+    { name: "Dr. Paritosh Peshwe", designation: "Professor", institution: "IIIT Nagpur" },
     { name: "Dr. Sunil C K", designation: "Assistant Professor, Dept. of Computer Science and Engineering", institution: "Indian Institute of Information Technology, Dharwad" },
     { name: "Dr. S G Shivaprasad Yadav", designation: "Former Honorary Secretary, IETE Bengaluru, Associate Professor, Dept. of ETE", institution: "Ramaiah Institute of Technology, Bengaluru" },
     { name: "Dr. Arvind Kumar G", designation: "Professor, ETE", institution: "MSRIT, Bengaluru" },
@@ -172,13 +172,42 @@ const conferenceCommittee2 = {
 
 const conferenceCommittee3 = {
   internationalAdvisoryCommittee: [
-    { name: "Prof. Francesco Flammini", designation: "Professor, Dept. of Computer Science", institution: "IDSIA USI-SUPSI, University of Applied Sciences and Arts of Southern Switzerland, Manno 6928, Switzerland" },
-    { name: "Prof. Dr. Fadi Al-Turjman", designation: "Research Center for AI and IoT", institution: "AI and Robotics Institute, Near East University, Turkey" },
-    { name: "Dr. Hong Li", institution: "University of Houston-Downtown" },
-    { name: "Dr. Chawki Djeddi", institution: "Larbi Tebessi University, Algeria" },
-    { name: "Dr. George Ghinea", designation: "Professor of Computer Science", institution: "Brunel University, London" }
+    {
+      name: "Prof. Francesco Flammini",
+      designation: "Professor, Department of Computer Science",
+      institution: "IDSIA USI-SUPSI, University of Applied Sciences and Arts of Southern Switzerland, Switzerland"
+    },
+    {
+      name: "Dr. George Ghinea",
+      designation: "Professor of Computer Science",
+      institution: "Brunel University, London"
+    },
+    {
+      name: "Andrej V Plotnikov",
+      designation: "Doctor of Science, Professor, Department of Information Technology and Applied Mathematics",
+      institution: "Odessa State Academy of Civil Engineering and Architecture, Odessa, Ukraine"
+    },
+    {
+      name: "Amrit Mukherjee",
+      designation: "Assistant Professor (Research), Department of Computer Science",
+      institution: "Faculty of Science, University of South Bohemia"
+    },
+    {
+      name: "Dr. Fadi Al-Turjman",
+      designation: "Research Center for AI and IoT",
+      institution: "AI and Robotics Institute, Near East University, Turkey"
+    },
+    {
+      name: "Dr. Chawki Djeddi",
+      institution: "Larbi Tebessi University, Algeria"
+    },
+    {
+      name: "Dr. Hong Li",
+      institution: "University of Houston-Downtown, USA"
+    }
   ],
-}
+};
+
 
 const Committee = () => {
   const { scrollY } = useScroll();
