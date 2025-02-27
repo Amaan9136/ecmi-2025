@@ -10,7 +10,7 @@ const ConferenceSection = () => {
   useEffect(() => {
     const updateRanges = () => {
       if (window.innerWidth <= 1200) {
-        setScrollRanges([16000, 16200]); // Mobile
+        setScrollRanges([16900, 17000]); // Mobile
       } else {
         setScrollRanges([9400, 9600]); // Desktop
       }
@@ -123,6 +123,7 @@ const ConferenceSection = () => {
                   "Reinforcement learning and real-time decision-making systems.",
                   "AI for natural language processing and computer vision.",
                   "Autonomous systems and robotics.",
+                  "Quantum Machine Learning.",
                   "AI-driven predictive maintenance in industrial systems.",
                   "Hybrid AI models for complex problem-solving.",
                   "AI in healthcare: Diagnosis, drug discovery and personalized medicine.",

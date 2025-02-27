@@ -49,7 +49,7 @@ const Hero = () => {
             </Animate>
 
             {/* Conference Info */}
-            <Animate delay={5} x={-60} y={80} duration={1} className="lg:max-w-[62rem] pt-10 md:pt-4 lg:pt-0">
+            <Animate delay={5} x={-60} y={80} duration={1} className="lg:max-w-[62rem] pt-4 lg:pt-0">
               {/* Desktop View */}
               <div className="hidden lg:flex text-center justify-between relative">
                 <Image src={balag} alt="balag" className="rounded-full border-2 border-gray-400 w-24 h-24" />
@@ -60,7 +60,7 @@ const Hero = () => {
                   <motion.p style={{ y: -titleY }} className="m-2 text-lg">
                     (Affiliated to VTU Belagavi, Recognized by AICTE New Delhi, accredited by NAAC with "A" Grade)
                     <br />
-                    Jyothi Nagara, Chikkamagaluru-577102, Karnataka, India.
+                    Chikkamagaluru-577102, Karnataka, India.
                   </motion.p>
                 </div>
                 <Image src={Nirma} alt="Nirma" className="rounded-full border-2 border-gray-400 w-24 h-24" />
@@ -79,7 +79,7 @@ const Hero = () => {
                   <motion.p style={{ y: titleY }} className="m-2 text-sm">
                     (Affiliated to VTU Belagavi, Recognized by AICTE New Delhi, accredited by NAAC with "A" Grade)
                     <br />
-                    Jyothi Nagara, Chikkamagaluru-577102, Karnataka, India.
+                    Chikkamagaluru-577102, Karnataka, India.
                   </motion.p>
                 </div>
               </div>
