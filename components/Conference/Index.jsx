@@ -10,7 +10,7 @@ const ConferenceSection = () => {
   useEffect(() => {
     const updateRanges = () => {
       if (window.innerWidth <= 1200) {
-        setScrollRanges([16900, 17000]); // Mobile
+        setScrollRanges([17900, 18000]); // Mobile
       } else {
         setScrollRanges([9400, 9600]); // Desktop
       }
@@ -38,7 +38,7 @@ const ConferenceSection = () => {
       </div>
 
       {/* Main Content */}
-      <motion.div style={{ opacity: sectionOpacity }} className="relative z-10 pt-16 pb-28">
+      <motion.div style={{ opacity: sectionOpacity }} className="relative z-10 pt-16 pb-12">
         {/* About The Conference */}
         <div className="m-0 p-0">
           <SectionTitle title="About The Conference" />

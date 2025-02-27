@@ -307,7 +307,7 @@ const conferenceCommittee3 = {
 
 const Committee = () => {
   const { scrollY } = useScroll();
-  const sectionOpacity = useTransform(scrollY, [12300, 12400], [1, 0.3]);
+  const sectionOpacity = useTransform(scrollY, [14300, 14400], [1, 0.3]);
 
   return (
     <section className="relative lg:mb-28 flex flex-col" id="committee">

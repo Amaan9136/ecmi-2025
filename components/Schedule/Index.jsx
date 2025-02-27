@@ -1,13 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
-import Scanner from "../../images/scanner/scanner.jpg";
+// import Scanner from "../../images/scanner/scanner.jpg";
 import SectionTitle from "../helpers/SectionTitle";
 import { importantDates, paymentDetails, registrationDetails } from "./schedule";
 
 const Schedule = () => {
   const largeScreenRanges = [10500, 10600];
-  const smallScreenRanges = [18100, 18200];
+  const smallScreenRanges = [19100, 19200];
 
   const { scrollY } = useScroll();
   const [scrollRanges, setScrollRanges] = useState(largeScreenRanges);
@@ -62,7 +62,7 @@ const Schedule = () => {
       </thead>
       <tbody>
         {importantDates.map((date, index) => (
-          <tr key={index} className="border border-gray-600 text-center">
+          <tr key={index} className="border border-gray-600 text-left">
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{date.event}</td>
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{date.date}</td>
           </tr>
@@ -87,7 +87,7 @@ const Schedule = () => {
       </thead>
       <tbody>
         {registrationDetails.map((detail, index) => (
-          <tr key={index} className="border border-gray-600 text-center">
+          <tr key={index} className="border border-gray-600 text-left">
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{detail.region}</td>
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{detail.category}</td>
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{detail.nonIeee}</td>
@@ -104,18 +104,18 @@ const Schedule = () => {
       💳 Payment Details
     </h2>
     <table className="border-collapse text-white w-full">
-      <tbody className="border border-gray-600 text-center">
+      <tbody className="border border-gray-600 text-left">
         {paymentDetails.map((detail, index) => (
           <tr key={index}>
             <td className="border border-gray-600 p-2 sm:p-3 font-semibold text-xs sm:text-base">
               {detail.label}
             </td>
             <td className="border border-gray-600 p-2 sm:p-3 text-xs sm:text-base">{detail.value}</td>
-            {index === 0 && (
-              <td className="border border-gray-600 p-2 sm:p-3 text-center align-middle" rowSpan={paymentDetails.length}>
+            {/* {index === 0 && (
+              <td className="border border-gray-600 p-2 sm:p-3 text-left align-middle" rowSpan={paymentDetails.length}>
                 <Image src={Scanner} alt="QR Code" width={150} height={150} className="mx-auto" />
               </td>
-            )}
+            )} */}
           </tr>
         ))}
       </tbody>
