@@ -43,7 +43,7 @@ const ConferenceSection = () => {
         <div className="m-0 p-0">
           <SectionTitle title="About The Conference" />
           <div className="w-full text-justify my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-purple-400">
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-justify">
               <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics, Communication
                 Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
               academicians, industry professionals, and students to present and discuss the latest advancements,
@@ -56,7 +56,7 @@ const ConferenceSection = () => {
               <li>Advanced informatics for data-driven solutions.</li>
               <li>Breakthroughs in machine intelligence and artificial intelligence applications.</li>
             </ul>
-            <p className="mt-4 font-bold text-yellow-400"> ECMI-2025 welcomes contributions in the form of original research papers, innovative prototypes,
+            <p className="mt-4 font-bold text-yellow-400 text-justify"> ECMI-2025 welcomes contributions in the form of original research papers, innovative prototypes,
               and industrial case studies. By bringing together experts from academia and industry, the
               conference aims to inspire groundbreaking research and foster new partnerships.
               Participants will have the opportunity to explore emerging trends, engage in interdisciplinary
@@ -147,7 +147,7 @@ const ConferenceSection = () => {
               </div>
             ))}
           </div>
-        </div>;
+        </div>
 
 
         {/* Call for Papers Section */}

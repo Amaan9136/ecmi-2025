@@ -32,7 +32,7 @@ const conferenceCommittee = {
   ],
   generalChair: [{
     name: "Dr. C T Jayadeva",
-    designation: "Principal, AIT",
+    designation: "Principal, AIT, Chikmagaluru",
     place: "",
   }],
   organizingChair: [{

@@ -1,10 +1,10 @@
 export const importantDates = [
-  { event: "Call for Papers", date: "15th June 2025" },
-  { event: "Full Length Paper Submission", date: "20th August 2025" },
-  { event: "Acceptance Notification", date: "15th September 2025" },
+  { event: "Call for Papers", date: "15ᵗʰ June 2025" },
+  { event: "Full Length Paper Submission", date: "20ᵗʰ August 2025" },
+  { event: "Acceptance Notification", date: "15ᵗʰ September 2025" },
   { event: "Final Paper Submission", date: "1st October 2025" },
-  { event: "Last Date for Registration", date: "10th October 2025" },
-  { event: "Conference Date", date: "6th and 7th November 2025" },
+  { event: "Last Date for Registration", date: "10ᵗʰ October 2025" },
+  { event: "Conference Date", date: "6ᵗʰ and 7ᵗʰ November 2025" },
 ];
 
 export const registrationDetails = [

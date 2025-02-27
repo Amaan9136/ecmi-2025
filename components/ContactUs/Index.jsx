@@ -35,9 +35,9 @@ const ContactUs = () => {
   const contactOpacity = useTransform(scrollY, scrollRanges, [1, 0.3]);
 
   return (
-    <section id="contact-us" className="section-container py-6">
+    <section id="contact-us" className="section-container py-6 px-4">
 
-      <Animate tag="h6" className="m-[26px] text-center lg:text-lg text-gray-400 font-bold">
+      <Animate tag="h6" className="m-[26px] text-center text-gray-400 font-bold text-lg lg:text-xl">
         Click the Contacts below to <span className="text-emerald-300">Chat in WhatsApp</span>
       </Animate>
 
@@ -45,40 +45,39 @@ const ContactUs = () => {
         delay={12}
         x={50}
         y={-50}
-        className="flex flex-wrap justify-center items-center sm:justify-center sm:items-center space-between"
+        className="flex flex-wrap justify-center items-center gap-6 sm:gap-8"
       >
         {contactData.map((cont, index) => (
-          <motion.div key={index} style={{ opacity: contactOpacity }} className="w-full sm:w-auto flex justify-center">
+          <motion.div key={index} style={{ opacity: contactOpacity }} className="w-full sm:w-80 md:w-96 lg:w-auto flex justify-center">
             <Tilt
-              className="cursor-pointer rounded-lg p-4 lg:p-8 group text-center"
+              className="cursor-pointer rounded-lg p-4 lg:p-8 group text-center w-full"
               glareEnable={true}
               glareMaxOpacity={1.1}
               glareColor={cont.color}
               glarePosition="all"
             >
               <Link href={"https://wa.me/+91" + cont.contact} target="_blank">
-                <h2 className="text-2xl lg:text-3xl font-bold leading-tight lg:leading-snug">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight lg:leading-snug">
                   {cont.name}
                 </h2>
-
                 <p
-                  style={{ color: cont.color }}
-                  className="flex items-center text-sm lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden"
-                >
-                  <FaEnvelope style={{ marginRight: '12px' }} />
-                  {cont.email}
-                </p>
-                <p
-                  style={{ color: cont.color }}
-                  className="flex items-center text-sm lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden"
-                >
-                  <FaPhoneAlt style={{ marginRight: '12px' }} />
-                  {cont.contact}
-                </p>
+  style={{ color: cont.color }}
+  className="flex items-center justify-center sm:text-lg lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden"
+>
+  <FaEnvelope style={{ marginRight: '12px' }} />
+  {cont.email}
+</p>
+<p
+  style={{ color: cont.color }}
+  className="flex items-center justify-center sm:text-lg lg:text-xl font-medium leading-6 lg:leading-8 group-hover:hidden"
+>
+  <FaPhoneAlt style={{ marginRight: '12px' }} />
+  {cont.contact}
+</p>
 
 
                 <span
-                  className="group-hover:opacity-100 opacity-0 text-sm lg:text-xl font-semibold block"
+                  className="group-hover:opacity-100 opacity-0 text-sm sm:text-lg lg:text-xl font-semibold block"
                   style={{ color: cont.color }}
                 >
                   Chat With {cont.name}

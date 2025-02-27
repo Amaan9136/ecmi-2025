@@ -54,10 +54,10 @@ const Hero = () => {
               <div className="hidden lg:flex text-center justify-between relative">
                 <Image src={balag} alt="balag" className="rounded-full border-2 border-gray-400 w-24 h-24" />
                 <div className="my-auto">
-                  <motion.p style={{ y: titleY }} className="text-3xl font-bold my-1">
+                  <motion.p style={{ y: -titleY }} className="text-3xl font-bold my-1">
                     ADICHUNCHANAGIRI INSTITUTE OF TECHNOLOGY
                   </motion.p>
-                  <motion.p style={{ y: titleY }} className="m-2 text-lg">
+                  <motion.p style={{ y: -titleY }} className="m-2 text-lg">
                     (Affiliated to VTU Belagavi, Recognized by AICTE New Delhi, accredited by NAAC with "A" Grade)
                     <br />
                     Jyothi Nagara, Chikkamagaluru-577102, Karnataka, India.
