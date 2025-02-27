@@ -5,8 +5,8 @@ import CommitteeCard from "./CommitteeCard";
 const conferenceCommittee = {
   chiefPatron: [
     {
-      name: "His Holiness Jagadguru Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji",
-      designation: "Pontiff, Sri Adichunchanagiri Mahasamstana Math, President \n Sri Adichunchanagiri Shikshana Trust ®",
+      name: `His Holiness Jagadguru Sri Sri Sri \nDr. Nirmalanandanatha Maha Swamiji`,
+      designation: "Pontiff, Sri Adichunchanagiri Mahasamstana Math \n President Sri Adichunchanagiri Shikshana Trust ®",
     },
   ],
   patron: [
