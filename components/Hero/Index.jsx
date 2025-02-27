@@ -73,24 +73,24 @@ const Hero = () => {
                   <Image src={Nirma} alt="Nirma" className="rounded-full border-2 border-gray-400 w-20 h-20" />
                 </div>
                 <div>
-                  <motion.p style={{ y: titleY }} className="text-xl font-bold my-1">
+                  <p style={{ y: titleY }} className="text-xl font-bold my-1">
                     ADICHUNCHANAGIRI INSTITUTE OF TECHNOLOGY
-                  </motion.p>
-                  <motion.p style={{ y: titleY }} className="m-2 text-sm">
+                  </p>
+                  <p style={{ y: titleY }} className="m-2 text-sm">
                     (Affiliated to VTU Belagavi, Recognized by AICTE New Delhi, Accredited by NAAC with "A" Grade)
                     <br />
                     Chikkamagaluru-577102, Karnataka, India.
-                  </motion.p>
+                  </p>
                 </div>
               </div>
 
               {/* Conference Title */}
               <Tilt className="cursor-pointer" tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={500}>
                 <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }} className="text-center md:-3 lg:mt-12">
-                  <motion.p style={{ y: titleY }} className="text-xl lg:text-5xl font-bold my-1 mb-4">
+                  <motion.p style={{ x: -titleY }} className="text-xl lg:text-5xl font-bold my-1 mb-4">
                     Welcome to ECMI-2025
                   </motion.p>
-                  <motion.p style={{ y: titleY }} className="text-xl lg:text-2xl my-1 font-bold text-yellow-400">
+                  <motion.p style={{ x: -titleY }} className="text-xl lg:text-2xl my-1 font-bold text-yellow-400">
                     INTERNATIONAL CONFERENCE ON EMERGING RESEARCH IN SMART ELECTRONICS, COMMUNICATION TECHNOLOGIES, INFORMATICS AND MACHINE INTELLIGENCE
                   </motion.p>
                 </motion.div>
@@ -99,10 +99,10 @@ const Hero = () => {
               {/* Department Info */}
               <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }}>
                 <div className="my-auto">
-                  <motion.p style={{ y: titleY }} className="text-lg text-center font-bold my-1 mt-6">
+                  <motion.p style={{ y: -titleY }} className="text-lg text-center font-bold my-1 mt-6">
                     Organized By
                   </motion.p>
-                  <motion.p style={{ y: titleY }} className="text-xl text-center font-bold my-1">
+                  <motion.p style={{ y: -titleY }} className="text-xl text-center font-bold my-1">
                     DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
                   </motion.p>
                   <motion.p className="block lg:hidden text-lg text-center">November 6ᵗʰ and 7ᵗʰ 2025</motion.p>
