@@ -44,6 +44,12 @@ export const registrationDetails = [
     nonIeee: "100 USD",
     ieee: "90 USD",
   },
+  {
+    region: "Extra Pages",
+    category: "Cost / Page",
+    nonIeee: "500 INR",
+    ieee: "500 INR",
+  },
 ];
 
 export const paymentDetails = [

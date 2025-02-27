@@ -91,12 +91,12 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
     {
-      name: "Prof. Chandrakala",
+      name: "Prof. Chandrakala C T",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
     {
-      name: "Prof. Megha Shree M",
+      name: "Prof. Meghashree M",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
@@ -113,7 +113,7 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
     {
-      name: "Prof. Linet D’Souza",
+      name: "Prof. Linet Jenevive DSouza",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
@@ -125,7 +125,7 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
     {
-      name: "Prof. Tasmia Namreen",
+      name: "Prof. Tasmia Namreen A",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
@@ -135,44 +135,44 @@ const conferenceCommittee = {
 
 const conferenceCommittee2 = {
   nationalAdvisoryCommittee: [
-    { name: "Dr. B. E. Rangaswamy", designation: "Registrar", institution: "VTU" },
-    { name: "Prof. S Y Kulkarni", designation: "Professor", institution: "" },
-    { name: "Dr. E S Chakravarthy", designation: "Advisor", institution: "ACU" },
+    { name: "Dr. B. E. Rangaswamy", designation: "Registrar", institution: "VTU, Belagavi" },
+    { name: "Prof. S Y Kulkarni", designation: "Professor", institution: "Bengaluru" },
+    { name: "Dr. E S Chakravarthy", designation: "Advisor", institution: "ACU, BG Nagara, Mandya" },
     { name: "Dr. Karunakara Rai", designation: "Professor", institution: "NMIT, Bengaluru" },
-    { name: "Dr. Puttamadappa", designation: "Registrar", institution: "Dayananda University" },
+    { name: "Dr. Puttamadappa", designation: "Registrar", institution: "Dayananda University, Bengaluru" },
     { name: "Dr. G.T Raju", designation: "Principal", institution: "SJCIT, Chikkaballapura" },
     { name: "Dr. Shobha B.N", designation: "Principal", institution: "BGSIT, BG Nagara, Mandya" },
     { name: "Dr. Ravikumar G.K", designation: "Principal", institution: "BGSCET, Bengaluru" },
     { name: "Dr. T.G Basavaraju", designation: "Professor", institution: "Govt Engineering College, Hassan" },
     { name: "Dr. C.M Prashanth", designation: "Principal", institution: "MITE, Mangalore" },
-    { name: "Dr. Sivasankar Elango", designation: "Associate Professor, Department of Computer Science & Engineering", institution: "National Institute of Technology, Tiruchirappalli, Tamil Nadu" },
+    { name: "Dr. Sivasankar Elango", designation: "Associate Professor, Dept. of Computer Science & Engineering", institution: "National Institute of Technology, Tiruchirappalli, Tamil Nadu" },
     { name: "Dr. Ananth Prabhu", designation: "Professor & Principal Investigator", institution: "Digital Forensics and Cyber Security Center of Excellence, Sahyadri College of Engineering & Management, Mangalore" },
-    { name: "Dr. Gururaj H L", designation: "Associate Professor", institution: "Manipal Institute of Technology, Bengaluru" },
-    { name: "Dr. Vasudeva", designation: "Professor", institution: "NMAMIT, Mangalore" },
-    { name: "Dr. Naveen B", designation: "Associate Professor", institution: "ACU" }
+    { name: "Dr. Gururaj H L", designation: "Associate Professor, Dept. of Information Technology", institution: "Manipal Institute of Technology, Bengaluru" },
+    { name: "Dr. Vasudeva", designation: "Professor, Dept. of Information Science and Engineering", institution: "NMAMIT, Mangalore" },
+    { name: "Dr. Naveen B", designation: "Associate Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" }
 ],
   technicalProgramCommittee: [
-    { name: "Prof. N. Shekar V. Shet", designation: "Professor and Head, Department of ECE", institution: "NITK, Surathkal" },
-    { name: "Dr. B Surendiran", designation: "Professor, Dept. of CSE", institution: "National Institute of Technology (NIT), Puducherry, Thiruvettakudy, Karaikal, India" },
+    { name: "Prof. N. Shekar V. Shet", designation: "Professor and Head, Dept. of ECE", institution: "NITK, Surathkal" },
+    { name: "Dr. B Surendiran", designation: "Professor, Dept. of CSE", institution: "National Institute of Technology (NIT), Puducherry, Thiruvettakudy, Karaikal" },
     { name: "Dr. Geetha V", designation: "Associate Professor, Dept. of Information Technology", institution: "NITK, Surathkal" },
     { name: "Dr. Viswanath Talasila", designation: "Professor and Head, ETE", institution: "MSRIT, Bengaluru" },
-    { name: "Dr. Paritosh Peshwe", institution: "IIIT Nagpur, India" },
-    { name: "Dr. Sunil C K", designation: "Assistant Professor, Department of Computer Science and Engineering", institution: "Indian Institute of Information Technology, Dharwad" },
-    { name: "Dr. S G Shivaprasad Yadav", designation: "Former Honorary Secretary, IETE Bengaluru, Associate Professor, Department of ETE", institution: "Ramaiah Institute of Technology, Bengaluru" },
+    { name: "Dr. Paritosh Peshwe",designation: "Professor", institution: "IIIT Nagpur, Dharward" },
+    { name: "Dr. Sunil C K", designation: "Assistant Professor, Dept. of Computer Science and Engineering", institution: "Indian Institute of Information Technology, Dharwad" },
+    { name: "Dr. S G Shivaprasad Yadav", designation: "Former Honorary Secretary, IETE Bengaluru, Associate Professor, Dept. of ETE", institution: "Ramaiah Institute of Technology, Bengaluru" },
     { name: "Dr. Arvind Kumar G", designation: "Professor, ETE", institution: "MSRIT, Bengaluru" },
     { name: "Prof. K C B Rao", designation: "Professor", institution: "University College of Engineering, Vizianagaram, JNTUK" },
     { name: "Dr. A P Jagadeesh Chandra", designation: "Professor, Dept. of ECE", institution: "AIT, Chikkamagaluru" },
-    { name: "Dr. Madhu Patil", designation: "Professor & HOD, Department of Electrical Science & Engineering", institution: "BGSCET, Bengaluru" },
+    { name: "Dr. Madhu Patil", designation: "Professor & HOD, Dept. of Electrical Science & Engineering", institution: "BGSCET, Bengaluru" },
     { name: "Dr. Swetha Amit", designation: "Senior Application Engineer", institution: "Entuple Technology Pvt Ltd, Bengaluru" },
     { name: "Dr. Ranjitha U N", designation: "Associate Professor and Head, CSE, School of Computer Science and Engineering", institution: "REVA University, Bengaluru" },
     { name: "Dr. Maithri C", designation: "Professor and Head, Dept. of CSE", institution: "Kalpataru Institute of Technology, Tiptur" },
-    { name: "Dr. Rajesh I S", designation: "Assistant Professor", institution: "BMSIT, Bengaluru" }
+    { name: "Dr. Rajesh I S", designation: "Assistant Professor, Dept. of AI&ML", institution: "BMSIT, Bengaluru" }
   ],
 }
 
 const conferenceCommittee3 = {
   internationalAdvisoryCommittee: [
-    { name: "Prof. Francesco Flammini", designation: "Professor, Department of Computer Science", institution: "IDSIA USI-SUPSI, University of Applied Sciences and Arts of Southern Switzerland, Manno 6928, Switzerland" },
+    { name: "Prof. Francesco Flammini", designation: "Professor, Dept. of Computer Science", institution: "IDSIA USI-SUPSI, University of Applied Sciences and Arts of Southern Switzerland, Manno 6928, Switzerland" },
     { name: "Prof. Dr. Fadi Al-Turjman", designation: "Research Center for AI and IoT", institution: "AI and Robotics Institute, Near East University, Turkey" },
     { name: "Dr. Hong Li", institution: "University of Houston-Downtown" },
     { name: "Dr. Chawki Djeddi", institution: "Larbi Tebessi University, Algeria" },
@@ -182,7 +182,7 @@ const conferenceCommittee3 = {
 
 const Committee = () => {
   const { scrollY } = useScroll();
-  const sectionOpacity = useTransform(scrollY, [7200, 7300], [1, 0.3]);
+  const sectionOpacity = useTransform(scrollY, [12300, 12400], [1, 0.3]);
 
   return (
     <section className="relative lg:mb-28 flex flex-col" id="committee">

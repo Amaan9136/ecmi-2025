@@ -2,8 +2,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
-import globe from "../../images/shapes/globe.png";
-import maqam from "../../images/shapes/MaqamWhite.png";
 import Amith from "../../images/speakers/Amith.jpg";
 import Arjunjs from "../../images/speakers/Arjunjs.png";
 import Deekshith from "../../images/speakers/Deekshith.jpg";
@@ -69,15 +67,6 @@ const AboutMentors = () => {
   return (
     <section className="relative mb-28" id="about-mentors">
       <div className="relative">
-        <div className="absolute top-1/4 right-4 lg:w-[55px] h-[32px] w-[32px] lg:h-[55px] 2xl:w-[82px] 2xl:h-[82px]">
-          <Image alt="globe65" src={globe} layout="fill" />
-        </div>
-        <div className="absolute bottom-8 left-4 w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[55px] lg:h-[55px] 2xl:w-[82px] 2xl:h-[82px]">
-          <Image alt="globe66" src={globe} layout="fill" />
-        </div>
-        <div className="absolute bottom-1/2 left-8 w-[75px] h-[53px] md:w-[40px] md:h-[40px] lg:w-[106px] lg:h-[76px] 2xl:w-[160px] 2xl:h-[112px]">
-          <Image alt="maqam67" src={maqam} layout="fill" />
-        </div>
 
         <motion.div
           style={{ opacity: sectionOpacity }}

@@ -10,7 +10,7 @@ const ConferenceSection = () => {
   useEffect(() => {
     const updateRanges = () => {
       if (window.innerWidth <= 1200) {
-        setScrollRanges([13000, 13200]); // Mobile
+        setScrollRanges([16000, 16200]); // Mobile
       } else {
         setScrollRanges([9400, 9600]); // Desktop
       }
@@ -42,9 +42,9 @@ const ConferenceSection = () => {
         {/* About The Conference */}
         <div className="m-0 p-0">
           <SectionTitle title="About The Conference" />
-          <div className="w-full my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-purple-400">
+          <div className="w-full text-justify my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-purple-400">
             <p className="leading-relaxed">
-              The <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics, Communication
+              <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics, Communication
                 Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
               academicians, industry professionals, and students to present and discuss the latest advancements,
               innovations, and challenges in these rapidly evolving domains.
@@ -63,6 +63,7 @@ const ConferenceSection = () => {
               discussions, and contribute to shaping the future of technology and innovation.</p>
           </div>
         </div>
+
 
         {/* Technical Tracks */}
         <div className="m-0 p-0 mt-2">
@@ -87,7 +88,8 @@ const ConferenceSection = () => {
               {
                 title: "Communication Technologies",
                 description: [
-                  "5G/6G networks: Design, deployment, and challenges.",
+                  "Signal and image processing.",
+                  "5G/6G networks: Design, deployment and challenges.",
                   "IoT communication protocols and architectures.",
                   "MIMO and massive MIMO systems.",
                   "Visible light and free-space optical communication.",
@@ -95,7 +97,6 @@ const ConferenceSection = () => {
                   "Cognitive and cooperative communication systems.",
                   "Satellite and wireless communication advancements.",
                   "Quantum communication technologies.",
-                  "Edge and fog computing for communication networks.",
                 ],
                 icon: <FaNetworkWired size={20} className="text-yellow-400" />,
               },
@@ -124,13 +125,16 @@ const ConferenceSection = () => {
                   "Autonomous systems and robotics.",
                   "AI-driven predictive maintenance in industrial systems.",
                   "Hybrid AI models for complex problem-solving.",
-                  "AI in healthcare: Diagnosis, drug discovery, and personalized medicine.",
+                  "AI in healthcare: Diagnosis, drug discovery and personalized medicine.",
                   "Federated learning and distributed AI models.",
                 ],
                 icon: <FaRobot size={20} className="text-yellow-400" />,
               },
             ].map((track, index) => (
-              <div key={index} className="p-4 bg-gray-900 text-white rounded-xl shadow-sm border-l-4 border-purple-400 cursor-pointer">
+              <div
+                key={index}
+                className="p-4 bg-gray-900 text-white rounded-xl shadow-sm border-l-4 border-purple-400 cursor-pointer"
+              >
                 <div className="flex items-center space-x-2">
                   {track.icon}
                   <h3 className="font-semibold">{track.title}</h3>
@@ -143,7 +147,8 @@ const ConferenceSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>;
+
 
         {/* Call for Papers Section */}
         <div className="w-full m-0 p-0 mt-2">

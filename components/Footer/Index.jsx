@@ -2,8 +2,6 @@ import { push, ref } from "firebase/database";
 import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import AlgeriaSymbol from "../../images/shapes/GDGAlgiers.png";
-import GlobeShape from "../../images/shapes/globe.png";
 import { database } from "../../server/firebase";
 import { socialsMedia } from "./data";
 
@@ -43,12 +41,6 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gray-800 text-gray-200 py-16 px-8 md:px-16 mt-4">
-      <div className="hidden lg:block absolute top-8 left-[35rem] opacity-40">
-        <Image src={GlobeShape} height={48} width={48} alt="Globe Shape" />
-      </div>
-      <div className="hidden lg:block absolute top-8 left-[15rem] opacity-40">
-        <Image src={AlgeriaSymbol} height={62} width={62} alt="Algeria Symbol" />
-      </div>
       <div className="grid md:grid-cols-3 gap-12">
         <div>
           <h2 className="text-3xl font-bold text-purple-400">ECMI-2025</h2>
@@ -98,13 +90,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-12 text-center text-gray-400">
-        <p>Copyright © 2024 WeXCode - ECMI. All Rights Reserved.</p>
-      </div>
-      <div className="hidden lg:block absolute top-[25rem] left-[5rem] opacity-40">
-        <Image src={GlobeShape} height={62} width={62} alt="Globe Shape" />
-      </div>
-      <div className="hidden lg:block absolute top-[20rem] right-[35rem] opacity-40">
-        <Image src={AlgeriaSymbol} height={148} width={148} alt="Algeria Symbol" />
+        <p>Copyright © 2025 WeXCode - ECMI. All Rights Reserved.</p>
       </div>
     </footer>
   );
