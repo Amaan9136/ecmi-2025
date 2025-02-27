@@ -1,14 +1,14 @@
-import Instagram from "../../images/logos/instagram.png";
-import Linkedin from "../../images/logos/linkedin.png";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+
 export const socialsMedia = [
   {
     social: "Instagram",
-    logo: Instagram,
-    redirect: "https://www.instagram.com/aiml_ait_official/",
+    icon: <FaInstagram className="text-pink-500 hover:text-pink-700 transition duration-300" />,
+    redirect: "https://www.instagram.com/ecmi__2025/",
   },
   {
     social: "Linkedin",
-    logo: Linkedin,
-    redirect: "https://www.linkedin.com/company/aignite-aiml-aitckm/",
+    icon: <FaLinkedin className="text-blue-600 hover:text-blue-800 transition duration-300" />,
+    redirect: "https://www.linkedin.com/in/ec-mi-5a6547353/",
   },
 ];

@@ -12,7 +12,7 @@ const ContactUs = () => {
     { name: "Prof. Madhu Prakash R", email: "madhuprakashr1@gmail.com", contact: "7795361426", color: "#39FF14" },
   ];
 
-  const largeScreenRanges = [10100, 10200];
+  const largeScreenRanges = [12100, 12200];
   const smallScreenRanges = [18900, 19000];
 
   const { scrollY } = useScroll();

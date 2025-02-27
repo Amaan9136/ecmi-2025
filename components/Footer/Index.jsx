@@ -1,5 +1,4 @@
 import { push, ref } from "firebase/database";
-import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { database } from "../../server/firebase";
@@ -8,7 +7,7 @@ import { socialsMedia } from "./data";
 const Footer = () => {
   const { register: registerNewsletter, handleSubmit: handleNewsletterSubmit, reset: resetNewsletter } = useForm();
   const { register: registerContact, handleSubmit: handleContactSubmit, reset: resetContact } = useForm();
-  
+
   const [newsletterSent, setNewsletterSent] = useState(false);
   const [contactSent, setContactSent] = useState(false);
 
@@ -54,15 +53,15 @@ const Footer = () => {
             <p><strong>Email:</strong> ecmi2025@aitckm.in</p>
             <p><strong>Web:</strong> <a href="https://aitecmi.com" className="text-purple-400 hover:underline">aitecmi.com</a></p>
           </div>
-          <div className="flex gap-4 mt-4 text-2xl">
+          <div className="flex gap-4 mt-4 text-4xl">
             {socialsMedia.map((item, index) => (
               <a key={index} href={item.redirect} target="_blank" rel="noopener noreferrer">
-                <Image src={item.logo} width={30} height={30} alt={item.social} className="cursor-pointer hover:opacity-80" />
+                {item.icon}
               </a>
             ))}
           </div>
         </div>
-        
+
         {/* Newsletter Subscription */}
         <div>
           <h3 className="text-2xl font-semibold text-cyan-300">Stay Connected</h3>
@@ -90,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-12 text-center text-gray-400">
-        <p>Copyright © 2025 WeXCode - ECMI. All Rights Reserved.</p>
+        <p>Copyright © 2025 WeXCode. All Rights Reserved.</p>
       </div>
     </footer>
   );
