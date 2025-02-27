@@ -50,7 +50,7 @@ const ContactUs = () => {
         {contactData.map((cont, index) => (
           <motion.div key={index} style={{ opacity: contactOpacity }} className="w-full sm:w-80 md:w-96 lg:w-auto flex justify-center">
             <Tilt
-              className="cursor-pointer rounded-lg p-4 lg:p-8 group text-center w-full"
+              className="cursor-pointer rounded-lg p-4 lg:p-8 group w-full"
               glareEnable={true}
               glareMaxOpacity={1.1}
               glareColor={cont.color}

@@ -46,7 +46,7 @@ const Schedule = () => {
 
       <motion.div
   style={{ opacity: tableOpacity }}
-  className="relative flex flex-col sm:flex-row items-center mt-6 gap-6 sm:gap-4 z-[350] pb-12"
+  className="relative flex flex-col sm:flex-row items-center mt-6 gap-6 sm:gap-4  pb-12"
 >
   {/* Important Dates Table */}
   <div className="rounded-xl border-0 border-l-4 border-purple-400 bg-gray-900 shadow-lg overflow-hidden border w-full sm:max-w-xl mx-auto">
