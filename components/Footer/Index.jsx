@@ -89,7 +89,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-12 text-center text-gray-400">
-        <p>Copyright © 2025 WeXCode. All Rights Reserved.</p>
+        <p>© 2025 WeXCode. All Rights Reserved.</p>
+        <p>For inquiries, contact us at <a href="tel:+918867305645">+91 8867305645</a>.</p>
       </div>
     </footer>
   );
