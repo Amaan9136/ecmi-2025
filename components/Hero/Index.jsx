@@ -1,4 +1,3 @@
-"use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
@@ -23,7 +22,13 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
       <motion.div style={{ opacity: bgOpacity, scale: scaleBg, y: titleY }} className="absolute inset-0 -z-10">
-        <Image src={BackGround} alt="Background Image" layout="fill" objectFit="cover" className="w-full h-full opacity-30" />
+        <Image
+          src={BackGround}
+          alt="Background Image"
+          fill
+          style={{ objectFit: "cover" }}
+          className="w-full h-full opacity-30"
+        />
       </motion.div>
 
       <Navbar />

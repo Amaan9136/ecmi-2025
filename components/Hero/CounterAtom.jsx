@@ -12,7 +12,7 @@ const CounterAtom = ({ delay, time, timeleft, isHidden = false }) => {
         scale={1.1}
         transitionSpeed={250}
         className="cursor-pointer">
-        <Image src={Atom} height={100} width={100} />
+        <Image alt={"Counter"+ delay} src={Atom} height={100} width={100} />
         <div className="absolute top-[1rem] right-[32%] ">
           <p style={{ color: "black" }} className="font-bold text-center text-base text-xl">{timeleft}</p>
           <p style={{ color: "black" }} className="text-center text-sm">{time}</p>
