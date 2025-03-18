@@ -53,6 +53,8 @@ const Hero = () => {
               </Tilt>
             </Animate>
 
+            
+
             {/* Conference Info */}
             <Animate delay={5} x={-60} y={80} duration={1} className="lg:max-w-[62rem] pt-4 lg:pt-0">
               {/* Desktop View */}
