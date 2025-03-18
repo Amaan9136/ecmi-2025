@@ -100,6 +100,7 @@ const Hero = () => {
                   </motion.p>
                 </motion.div>
               </Tilt>
+              
 
               {/* Department Info */}
               <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }}>
