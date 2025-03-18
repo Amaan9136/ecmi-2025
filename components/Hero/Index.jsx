@@ -89,6 +89,7 @@ const Hero = () => {
                 </div>
               </div>
 
+
               {/* Conference Title */}
               <Tilt className="cursor-pointer" tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={500}>
                 <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }} className="text-center md:-3 lg:mt-12">
@@ -100,7 +101,7 @@ const Hero = () => {
                   </motion.p>
                 </motion.div>
               </Tilt>
-              
+
 
               {/* Department Info */}
               <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }}>
