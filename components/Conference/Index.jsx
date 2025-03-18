@@ -56,7 +56,7 @@ const ConferenceSection = () => {
               <li>Advanced informatics for data-driven solutions.</li>
               <li>Breakthroughs in machine intelligence and artificial intelligence applications.</li>
             </ul>
-            <p className="mt-4 font-bold text-yellow-400 text-justify"> ECMI-2025 welcomes contributions in the form of original research papers, innovative prototypes,
+            <p className="mt-4 font-bold text-yellow-400 text-justify"> ECMI-2026 welcomes contributions in the form of original research papers, innovative prototypes,
               and industrial case studies. By bringing together experts from academia and industry, the
               conference aims to inspire groundbreaking research and foster new partnerships.
               Participants will have the opportunity to explore emerging trends, engage in interdisciplinary
@@ -68,7 +68,7 @@ const ConferenceSection = () => {
         {/* Technical Tracks */}
         <div className="m-0 p-0 mt-2">
           <SectionTitle title="Technical Tracks" />
-          <div className="my-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+          <div className="my-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {[
               {
                 title: "Smart Electronics",
@@ -85,21 +85,7 @@ const ConferenceSection = () => {
                 ],
                 icon: <FaMicrochip size={20} className="text-yellow-400" />,
               },
-              {
-                title: "Communication Technologies",
-                description: [
-                  "Signal and image processing.",
-                  "5G/6G networks: Design, deployment and challenges.",
-                  "IoT communication protocols and architectures.",
-                  "MIMO and massive MIMO systems.",
-                  "Visible light and free-space optical communication.",
-                  "Software-defined networking (SDN) and network virtualization.",
-                  "Cognitive and cooperative communication systems.",
-                  "Satellite and wireless communication advancements.",
-                  "Quantum communication technologies.",
-                ],
-                icon: <FaNetworkWired size={20} className="text-yellow-400" />,
-              },
+         
               {
                 title: "Informatics",
                 description: [
@@ -159,7 +145,7 @@ const ConferenceSection = () => {
           >
             <div className="bg-gray-900 text-white p-6 rounded-xl border-l-4 border-purple-400 mt-6">
               <p className="text-md">
-                <span className=" text-yellow-400">ECMI-2025</span> invites the submission of original, high-quality research papers that have not been previously published.
+                <span className=" text-yellow-400">ECMI-2026</span> invites the submission of original, high-quality research papers that have not been previously published.
               </p>
 
               <p className="mt-4 text-md">
@@ -169,7 +155,7 @@ const ConferenceSection = () => {
               </p>
 
               <p className="mt-4 text-md text-[#FF3131] font-bold flex items-center">
-                ⚠ ECMI-2025 takes plagiarism very seriously and considers it a professional misconduct.
+                ⚠ ECMI-2026 takes plagiarism very seriously and considers it a professional misconduct.
               </p>
             </div>
           </div>

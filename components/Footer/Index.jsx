@@ -42,7 +42,7 @@ const Footer = () => {
     <footer className="relative bg-gray-800 text-gray-200 py-16 px-8 md:px-16 mt-4">
       <div className="grid md:grid-cols-3 gap-12">
         <div>
-          <h2 className="text-3xl font-bold text-purple-400">ECMI-2025</h2>
+          <h2 className="text-3xl font-bold text-purple-400">ECMI-2026</h2>
           <p className="my-2 text-gray-300">Adichunchanagiri Institute of Technology (AIT), Chikkamagaluru, Karnataka, India</p>
           <div className="my-2">
             {/* <p><strong>Phone:</strong> +91 7795361426 (Prof. Madhuprakash)</p>
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-12 text-center text-gray-400">
-        <p>© 2025 WeXCode. All Rights Reserved.</p>
+        <p>© 2026 WeXCode. All Rights Reserved.</p>
         <p>For inquiries, contact us at <a href="tel:+918867305645">+91 8867305645</a>.</p>
       </div>
     </footer>

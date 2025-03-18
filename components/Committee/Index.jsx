@@ -130,6 +130,13 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
   ],
+  technicalProgramChair:[
+    { 
+    name: "Dr. A P Jagadeesh Chandra", 
+    designation: "Professor, Dept. of ECE", 
+    institution: "AIT, Chikkamagaluru" 
+    }
+  ],
 };
 
 
@@ -153,6 +160,7 @@ const conferenceCommittee2 = {
     { name: "Dr. Naveen B", designation: "Associate Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" },
     { name: "Dr. Naveen K B", designation: "Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" }
   ],
+ 
   technicalProgramCommittee: [
     { 
         name: "Prof. N Shekar V Shet", 
@@ -208,11 +216,6 @@ const conferenceCommittee2 = {
         name: "Prof. K C B Rao", 
         designation: "Professor", 
         institution: "University College of Engineering, Vizianagaram, JNTUK" 
-    },
-    { 
-        name: "Dr. A P Jagadeesh Chandra", 
-        designation: "Professor, Dept. of ECE", 
-        institution: "AIT, Chikkamagaluru" 
     },
     { 
         name: "Dr. Madhu Patil", 

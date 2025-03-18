@@ -44,7 +44,7 @@ const Hero = () => {
                 >
                   <Typewriter
                     options={{
-                      strings: ["SMART ELECTRONICS", "COMMUNICATION TECHNOLOGIES", "MACHINE INTELLIGENCE", "INFORMATICS"],
+                      strings: ["SMART ELECTRONICS", "MACHINE INFORMATICS"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -96,7 +96,7 @@ const Hero = () => {
               <Tilt className="cursor-pointer" tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={500}>
                 <motion.div style={{ opacity: bgOpacity, scale: scaleTitle }} className="text-center md:-3 lg:mt-12">
                   <motion.p style={{ x: -titleY }} className="text-xl lg:text-5xl font-bold my-1 mb-4">
-                    Welcome to ECMI-2025
+                    Welcome to ECMI-2026
                   </motion.p>
                   <motion.p style={{ x: -titleY }} className="text-xl lg:text-2xl my-1 font-bold text-yellow-400">
                     INTERNATIONAL CONFERENCE ON EMERGING RESEARCH IN SMART ELECTRONICS  AND MACHINE INFORMATICS
@@ -114,7 +114,7 @@ const Hero = () => {
                   <motion.p style={{ y: -titleY }} className="text-xl text-center font-bold my-1">
                     DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
                   </motion.p>
-                  <motion.p className="block lg:hidden text-lg text-center">November 6ᵗʰ and 7ᵗʰ 2025</motion.p>
+                  <motion.p className="block lg:hidden text-lg text-center">April 9ᵗʰ and 10ᵗʰ 2026</motion.p>
 
                 </div>
               </motion.div>
@@ -122,9 +122,9 @@ const Hero = () => {
           </div>
 
           {/* Countdown Timer */}
-          <motion.p className="hidden lg:block mt-[-10rem] mb-[3.8rem] ml-3 text-lg">November 6ᵗʰ and 7ᵗʰ 2025</motion.p>
+          <motion.p className="hidden lg:block mt-[-10rem] mb-[3.8rem] ml-3 text-lg">April 9ᵗʰ and 10ᵗʰ 2026</motion.p>
           <motion.div className="hidden lg:block max-w-[20rem]" style={{ opacity: counterOpacity, x: counterX, scale: scaleTitle }}>
-            <CounterContainer countDownLimit="2025-11-06T09:00:00" />
+            <CounterContainer countDownLimit="2026-11-06T09:00:00" />
           </motion.div>
         </Animate>
       </div>

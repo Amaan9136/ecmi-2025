@@ -4,7 +4,7 @@ export const socialsMedia = [
   {
     social: "Instagram",
     icon: <FaInstagram className="text-pink-500 hover:text-pink-700 transition duration-300" />,
-    redirect: "https://www.instagram.com/ecmi__2025/",
+    redirect: "https://www.instagram.com/ecmi__2026/",
   },
   {
     social: "Linkedin",

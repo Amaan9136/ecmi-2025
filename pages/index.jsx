@@ -14,15 +14,15 @@ export default function Home() {
       <NeonGlowEffect />
 
       <Head>
-        <title>ECMI 2025 - International Conference on Smart Electronics, Communication & AI</title>
+        <title>ECMI 2026 - International Conference on Emerging Research in Smart Electronics and Machine Infomatics</title>
         <meta
           name="description"
-          content="Join ECMI 2025 at AIT Chikmagalur, an international conference on emerging research in smart electronics  and machine informatics
-        <meta name="keywords" content="ECMI 2025, AIT Conference, Smart Electronics, AI, Machine Intelligence, IoT, 5G, Chikmagalur, India" />
-        <meta name="author" content="ECMI 2025 - AIT Chikmagalur" />
+          content="Join ECMI 2026 at AIT Chikmagalur, an International Conference on Emerging Research in Smart Electronics and Machine Infomatics"/>
+        <meta name="keywords" content="ECMI 2026, AIT Conference, Smart Electronics, AI, Machine Intelligence, IoT, 5G, Chikmagalur, India" />
+        <meta name="author" content="ECMI 2026 - AIT Chikmagalur" />
 
-        <meta property="og:title" content="ECMI 2025 - International Conference on Smart Electronics, Communication & AI" />
-        <meta property="og:description" content="ECMI 2025 brings together experts in AI, IoT, 5G, and more for interdisciplinary discussions and groundbreaking research." />
+        <meta property="og:title" content="ECMI 2026 - International Conference on Emerging Research in Smart Electronics and Machine Infomatics" />
+        <meta property="og:description" content="ECMI 2026 brings together experts in AI, IoT, 5G, and more for interdisciplinary discussions and groundbreaking research." />
         <meta property="og:url" content="https://aitecmi.com/" />
         <meta property="og:type" content="website" />
 
