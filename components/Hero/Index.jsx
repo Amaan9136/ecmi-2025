@@ -97,7 +97,7 @@ const Hero = () => {
                     Welcome to ECMI-2025
                   </motion.p>
                   <motion.p style={{ x: -titleY }} className="text-xl lg:text-2xl my-1 font-bold text-yellow-400">
-                    INTERNATIONAL CONFERENCE ON EMERGING RESEARCH IN SMART ELECTRONICS, COMMUNICATION TECHNOLOGIES, INFORMATICS AND MACHINE INTELLIGENCE
+                    INTERNATIONAL CONFERENCE ON EMERGING RESEARCH IN SMART ELECTRONICS  AND MACHINE INFORMATICS
                   </motion.p>
                 </motion.div>
               </Tilt>

@@ -17,8 +17,7 @@ export default function Home() {
         <title>ECMI 2025 - International Conference on Smart Electronics, Communication & AI</title>
         <meta
           name="description"
-          content="Join ECMI 2025 at AIT Chikmagalur, an international conference on emerging research in smart electronics, communication, informatics, and machine intelligence."
-        />
+          content="Join ECMI 2025 at AIT Chikmagalur, an international conference on emerging research in smart electronics  and machine informatics
         <meta name="keywords" content="ECMI 2025, AIT Conference, Smart Electronics, AI, Machine Intelligence, IoT, 5G, Chikmagalur, India" />
         <meta name="author" content="ECMI 2025 - AIT Chikmagalur" />
 

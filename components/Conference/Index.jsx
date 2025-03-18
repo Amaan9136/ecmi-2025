@@ -44,8 +44,8 @@ const ConferenceSection = () => {
           <SectionTitle title="About The Conference" />
           <div className="w-full text-justify my-6 mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-xl border-l-4 border-purple-400">
             <p className="leading-relaxed text-justify">
-              <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics, Communication
-                Technologies, Informatics, and Machine Intelligence</span> serves as a premier platform for researchers,
+              <span className="font-semibold text-yellow-400"> The International Conference on Emerging Research in Smart Electronics
+              and Machine Informatics</span> serves as a premier platform for researchers,
               academicians, industry professionals, and students to present and discuss the latest advancements,
               innovations, and challenges in these rapidly evolving domains.
             </p>
