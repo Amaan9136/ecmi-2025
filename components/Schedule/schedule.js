@@ -4,7 +4,7 @@ export const importantDates = [
   { event: "Acceptance Notification", date: "1ˢᵗ December 2025" },
   { event: "Final Paper Submission", date: "1ˢᵗ March 2026" },
   { event: "Last Date for Registration", date: "9ᵗʰ March 2026" },
-  { event: "Conference Date", date: "9ᵗʰ and 10ᵗʰ November 2026" },
+  { event: "Conference Date", date: "9ᵗʰ and 10ᵗʰ April 2026" },
 ];
 
 export const registrationDetails = [

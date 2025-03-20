@@ -114,7 +114,7 @@ const Hero = () => {
                   <motion.p style={{ y: -titleY }} className="text-xl text-center font-bold my-1">
                     DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
                   </motion.p>
-                  <motion.p className="block lg:hidden text-lg text-center">November 9ᵗʰ and 10ᵗʰ 2026</motion.p>
+                  <motion.p className="block lg:hidden text-lg text-center">April 9ᵗʰ and 10ᵗʰ 2026</motion.p>
 
                 </div>
               </motion.div>
@@ -122,7 +122,7 @@ const Hero = () => {
           </div>
 
           {/* Countdown Timer */}
-          <motion.p className="hidden lg:block mt-[-10rem] mb-[3.8rem] ml-3 text-lg">November 9ᵗʰ and 10ᵗʰ 2026</motion.p>
+          <motion.p className="hidden lg:block mt-[-10rem] mb-[3.8rem] ml-3 text-lg">April 9ᵗʰ and 10ᵗʰ 2026</motion.p>
           <motion.div className="hidden lg:block max-w-[20rem]" style={{ opacity: counterOpacity, x: counterX, scale: scaleTitle }}>
             <CounterContainer countDownLimit="2026-11-06T09:00:00" />
           </motion.div>
