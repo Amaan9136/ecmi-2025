@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import aitImage from "../../images/sectionsAssets/ait.png";
-import deptImage from "../../images/sectionsAssets/dept.jpg";
-import ecdptImage from "../../images/sectionsAssets/ecdpt.jpg";
+// import deptImage from "../../images/sectionsAssets/dept.jpg";
+// import ecdptImage from "../../images/sectionsAssets/ecdpt.jpg";
 import hrdImage from "../../images/sectionsAssets/hrd.jpg";
 import mattImage from "../../images/sectionsAssets/matt.png";
 import trustImage from "../../images/sectionsAssets/trust.png";
@@ -48,23 +48,23 @@ const data = [
     image: aitImage,
     image2: hrdImage,
   },
-  {
-    title: "Department of Electronics and Communication Engineering",
-    paragraph:
-      `The department was initially affiliated with the University of Mysore from 1981 to 1992, followed by Kuvempu University from 1992 to 1998. Currently it has been affiliated with Visvesvaraya Technological University (VTU), Belagavi, Karnataka. The Department of Electronics and Communication Engineering (ECE) was established in 1981. It is recognized by the All India Council for Technical Education (AICTE) and has been accredited twice by the National Board of Accreditation (NBA). The department offers full-time undergraduate, postgraduate and research programs. It plays a pivotal role in shaping the careers and equipping the students with essential skills for continuous professional growth, while making a significant contribution to society. \n The department boasts a highly experienced and dedicated faculty, with qualifications from esteemed institutions and expertise across various fields, including VLSI and Embedded Systems, Digital Communication, Microwave and Antenna Design, Digital Signal Processing, Image Processing, Computer Networks, Nano Electronics, and MEMS. Faculty members have contributed significantly to technical literature, with numerous research papers published in reputed journals. The department fosters a collaborative academic and research environment, supporting students in their academic pursuits.\n The department is equipped with well-established laboratories, supported by advanced software such as MATLAB, Tanner, LabVIEW, HFSS, Multisim and Vivado, along with essential tools like Spectrum Analyser and Logic Analyser for undergraduate, postgraduate, and research activities. Owing to the strong academic performance in university examinations, students have consistently secured university ranks enhancing the institution’s reputation at the state level. The majority of graduates secure placements in leading companies, paving the way for a successful future.`,
-    highlights: [
-      "established in 1981",
-      "affiliated with Visvesvaraya Technological University (VTU), Belagavi",
-      "Recognized by AICTE",
-      "accredited twice by the National Board of Accreditation (NBA)",
-      "UG, PG, and research programs",
-      "VLSI, embedded systems, digital communication",
-      "DSP, image processing, computer networks",
-      "nano-electronics, and MEMS",
-    ],
-    image: deptImage,
-    image2: ecdptImage,
-  },
+  // {
+  //   title: "Department of Electronics and Communication Engineering",
+  //   paragraph:
+  //     `The department was initially affiliated with the University of Mysore from 1981 to 1992, followed by Kuvempu University from 1992 to 1998. Currently it has been affiliated with Visvesvaraya Technological University (VTU), Belagavi, Karnataka. The Department of Electronics and Communication Engineering (ECE) was established in 1981. It is recognized by the All India Council for Technical Education (AICTE) and has been accredited twice by the National Board of Accreditation (NBA). The department offers full-time undergraduate, postgraduate and research programs. It plays a pivotal role in shaping the careers and equipping the students with essential skills for continuous professional growth, while making a significant contribution to society. \n The department boasts a highly experienced and dedicated faculty, with qualifications from esteemed institutions and expertise across various fields, including VLSI and Embedded Systems, Digital Communication, Microwave and Antenna Design, Digital Signal Processing, Image Processing, Computer Networks, Nano Electronics, and MEMS. Faculty members have contributed significantly to technical literature, with numerous research papers published in reputed journals. The department fosters a collaborative academic and research environment, supporting students in their academic pursuits.\n The department is equipped with well-established laboratories, supported by advanced software such as MATLAB, Tanner, LabVIEW, HFSS, Multisim and Vivado, along with essential tools like Spectrum Analyser and Logic Analyser for undergraduate, postgraduate, and research activities. Owing to the strong academic performance in university examinations, students have consistently secured university ranks enhancing the institution’s reputation at the state level. The majority of graduates secure placements in leading companies, paving the way for a successful future.`,
+  //   highlights: [
+  //     "established in 1981",
+  //     "affiliated with Visvesvaraya Technological University (VTU), Belagavi",
+  //     "Recognized by AICTE",
+  //     "accredited twice by the National Board of Accreditation (NBA)",
+  //     "UG, PG, and research programs",
+  //     "VLSI, embedded systems, digital communication",
+  //     "DSP, image processing, computer networks",
+  //     "nano-electronics, and MEMS",
+  //   ],
+  //   image: deptImage,
+  //   image2: ecdptImage,
+  // },
 ];
 
 

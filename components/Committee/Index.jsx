@@ -155,11 +155,14 @@ const conferenceCommittee2 = {
     { name: "Dr. Sivasankar Elango", designation: "Associate Professor, Dept. of Computer Science & Engineering", institution: "National Institute of Technology, Tiruchirappalli, Tamil Nadu" },
     { name: "Dr. Ananth Prabhu", designation: "Professor & Principal Investigator", institution: "Digital Forensics and Cyber Security Center of Excellence, Sahyadri College of Engineering & Management, Mangalore" },
     { name: "Dr. Gururaj H L", designation: "Associate Professor, Dept. of Information Technology", institution: "Manipal Institute of Technology, Bengaluru" },
-    { name: "Dr. Vasudeva", designation: "Professor, Dept. of Information Science and Engineering", institution: "NMAMIT, Mangalore" },
+    { name: "Dr. Vasudeva", designation: "Past Chair, IEEE Mangalore Sub Section", institution: "NMAMIT, Mangalore" },
     { name: "Dr. Anandaraju M B", designation: "Director - Corporate Affairs", institution: "ACU, BG Nagara, Mandya" },
     { name: "Dr. Naveen B", designation: "Associate Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" },
-    { name: "Dr. Naveen K B", designation: "Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" }
+    { name: "Dr. Naveen K B", designation: "Professor, Dept. of ECE", institution: "ACU, BG Nagara, Mandya" },
+    { name: "Dr. Parameshachari B D", designation: "Vice Chair, IEEE Bangalore Section; Professor & Head, Department of ECE", institution: "Nitte Meenakshi Institute of Technology, Bengaluru" },
+    { name: "Dr. Sumana M", designation: "SMIEEE, IEEE-CIS Chair (Bangalore Section), LMCSI, LMISTE; Professor, Department of Information Science and Engineering", institution: "MSRIT, Bengaluru" }
   ],
+  
  
   technicalProgramCommittee: [
     { 
