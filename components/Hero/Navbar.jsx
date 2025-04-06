@@ -2,7 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
-import AIgnite from "../../images/logos/ECMI_Logo.png";
+import ECMI from "../../images/logos/ECMI_Logo.png";
+import ieee from "../../images/logos/ieee.png";
+import ieeeBng from "../../images/logos/ieee_bng.png";
+import ieeeSoci from "../../images/logos/ieee_soci.png";
 import Animate from "../helpers/Animate-motion.jsx";
 import NavLinks from "./links";
 
@@ -10,19 +13,31 @@ const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
 
   return (
-    <header className="flex flex-col gap-8 p-3 m-3 md:p-4 md:m-4 lg:p-5 lg:m-5">
+    <header className="p-3 m-3 md:p-4 md:m-4 lg:p-5 lg:m-5">
       {/* Desktop menu */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col gap-8 justify-between items-center">
         <div className="flex justify-center lg:justify-start w-full">
-          <Animate delay={1} className="cursor-pointer">
+          <Animate delay={1} className="cursor-pointer flex gap-5 items-center mt-12 sm:mt-0">
             <Tilt tiltMaxAngleX={60} tiltMaxAngleY={40} scale={1.5} transitionSpeed={250}>
-              <Image src={AIgnite} alt="AIgnite-Logo" width={220} height={220} priority={1} className="mt-2 mx-auto" />
+              <Image src={ieee} alt="ieee-Logo" width={100} height={100} priority={1} className="mt-2 mx-auto" />
+            </Tilt>
+            <Tilt tiltMaxAngleX={60} tiltMaxAngleY={40} scale={1.5} transitionSpeed={250}>
+              <Image src={ieeeBng} alt="ieeeBng-Logo" width={100} height={100} priority={1} className="mt-2 mx-auto" />
+            </Tilt>
+            <Tilt tiltMaxAngleX={60} tiltMaxAngleY={40} scale={1.5} transitionSpeed={250}>
+              <Image src={ieeeSoci} alt="ieeeSoci-Logo" width={100} height={100} priority={1} className="mt-2 mx-auto" />
             </Tilt>
           </Animate>
         </div>
 
+        <div className="flex justify-center lg:justify-start w-full">
+          <Animate delay={1} className="cursor-pointer flex gap-5">
+            <Image src={ECMI} alt="ECMI-Logo" width={150} height={150} priority={1} className="mt-2 mx-auto" />
+          </Animate>
+        </div>
+
         {/* Desktop Links */}
-        <Animate delay={2} tag="ul" className="hidden lg:flex items-center text-sm gap-8 font-semibold text-qiskit-white mt-[-75px] z-[120] px-6 py-2 fixed right-0">
+        <Animate delay={2} tag="ul" className="hidden lg:flex items-center text-sm gap-3 font-semibold text-qiskit-white mt-[0px] z-[120] px-6 py-2 fixed right-0">
           {NavLinks.map((navLink, idx) => (
             <Tilt key={11 + idx} scale={1.1} transitionSpeed={250} className="cursor-pointer">
               <Link href={navLink.redirect}>
@@ -37,7 +52,7 @@ const Navbar = () => {
         {/* Hamburger Menu (Mobile) */}
         <div
           onClick={() => setIsNavToggled(!isNavToggled)}
-          className={`${isNavToggled ? "hidden" : "block" }  flex flex-col cursor-pointer gap-1.5 lg:hidden fixed top-4 right-4 z-[250] p-3 bg-gray-800 rounded-md`}
+          className={`${isNavToggled ? "hidden" : "block"}  flex flex-col cursor-pointer gap-1.5 lg:hidden fixed top-4 right-4 z-[250] p-3 bg-gray-800 rounded-md`}
         >
           <div className="w-6 h-0.5 bg-white"></div>
           <div className="w-6 h-0.5 bg-white"></div>
@@ -51,7 +66,7 @@ const Navbar = () => {
           {/* Close button */}
           <div
             onClick={() => setIsNavToggled(false)}
-            className={`${isNavToggled ? "block" : "hidden" } absolute top-2 right-4 z-[250] p-3 text-2xl cursor-pointer font-bold`}
+            className={`${isNavToggled ? "block" : "hidden"} absolute top-2 right-4 z-[250] p-3 text-2xl cursor-pointer font-bold`}
           >
             ✖
           </div>

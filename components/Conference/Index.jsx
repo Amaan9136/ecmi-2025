@@ -135,54 +135,55 @@ const ConferenceSection = () => {
             ))}
           </div>
         </div>
-        {/* Call for Papers Section */}
-        <div className="w-full m-0 p-0 mt-2">
-          <SectionTitle title="Call for Papers" />
+{/* Call for Papers Section */}
+<div className="w-full m-0 p-0 mt-2">
+  <SectionTitle title="Call for Papers" />
 
-          <div className="mx-auto">
-            <div className="bg-gray-900 text-white p-6 rounded-xl border-l-4 border-purple-400 mt-6 space-y-4">
+  <div className="mx-auto">
+    <div className="bg-gray-900 text-white p-6 rounded-xl border-l-4 border-purple-400 mt-6 space-y-2">
 
-              <p className="text-md">
-                <span className="text-yellow-400">ECMI-2026</span> invites the submission of original, high-quality research papers that have not been previously published.
-              </p>
+      <p className="text-md">
+        <span className="text-yellow-400">ECMI-2026</span> invites the submission of original, high-quality research papers that have not been previously published.
+      </p>
 
-              <p className="text-md">
-                All accepted and presented papers will be submitted to
-                <span className="text-yellow-400"> IEEE</span> for potential inclusion in the
-                <span className="text-yellow-400"> Xplore Digital Library</span>.
-              </p>
+      <p className="text-md">
+        All accepted and presented papers will be submitted for possible inclusion in the
+        <span className="text-yellow-400"> IEEE Xplore Digital Library</span>.
+      </p>
 
-              <p className="text-md text-[#FF3131] font-bold flex items-center">
-                ⚠ ECMI-2026 takes plagiarism very seriously and considers it a professional misconduct.
-              </p>
+      <p className="text-md text-[#FF3131] font-bold flex items-center">
+        ⚠ If not presented in person, papers will not be published. ECMI-2026 takes plagiarism very seriously and considers it a professional misconduct.
+      </p>
 
-              <hr className="border-gray-700 my-4" />
+      <hr className="border-gray-700 my-4" />
 
-              <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-purple-300">Submission Guidelines</h3>
-                <p className="text-md">
-                  Full-length, high quality, original, and previously unpublished experimental or theoretical research articles with a maximum of <span className="text-green-400 font-medium">6 (Six)</span> pages and a minimum of <span className="text-green-400 font-medium">4 (Four)</span> pages, including figures, tables, and references, as per the Conference template (MS Word or LaTeX), shall be uploaded for ECMI-2026.
-                </p>
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold text-purple-300">Submission Guidelines</h3>
 
-                <p className="text-md">
-                  Paper Submission Link:{" "}
-                  <a
-                    href="https://cmt3.research.microsoft.com/ECMI2026"
-                    className="text-yellow-400 underline hover:text-yellow-300 break-all"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://cmt3.research.microsoft.com/ECMI2026
-                  </a>
-                </p>
+        <p className="text-md">
+          Full-length, high-quality, original, and previously unpublished experimental or theoretical research articles with a maximum of <span className="text-green-400 font-medium">6 (Six)</span> pages and a minimum of <span className="text-green-400 font-medium">4 (Four)</span> pages, including figures, tables, and references, as per the Conference template (<span className="text-yellow-400">MS Word</span> or <span className="text-yellow-400">LaTeX</span>), shall be uploaded for ECMI-2026.
+        </p>
 
-                <p className="text-md text-red-400 font-medium">
-                  Note: An additional charge of ₹500/- will apply for each extra page.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p className="text-md">
+          Paper Submission Link:{" "}
+          <a
+            href="https://cmt3.research.microsoft.com/ECMI2026"
+            className="text-yellow-400 underline hover:text-yellow-300 break-all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://cmt3.research.microsoft.com/ECMI2026
+          </a>
+        </p>
+
+        <p className="text-md text-red-400 font-medium">
+          Note: An additional charge of ₹500/- will apply for each extra page.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
       </motion.div>
