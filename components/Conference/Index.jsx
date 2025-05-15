@@ -51,10 +51,9 @@ const ConferenceSection = () => {
             </p>
             <p className="mt-4">This conference aims to foster collaboration and knowledge exchange, focusing on cutting-edge topics such as:</p>
             <ul className="list-disc list-inside mt-2">
-              <li>Smart electronics and embedded systems.</li>
-              <li>Emerging communication technologies, including IoT and 5G/6G.</li>
-              <li>Advanced informatics for data-driven solutions.</li>
-              <li>Breakthroughs in machine intelligence and artificial intelligence applications.</li>
+              <li>Smart electronics and Embedded systems.</li>
+              <li>Advanced informatics for Data-driven solutions.</li>
+              <li>Machine intelligence and Artificial intelligence applications.</li>
             </ul>
             <p className="mt-4 font-bold text-yellow-400 text-justify"> ECMI-2026 welcomes contributions in the form of original research papers, innovative prototypes,
               and industrial case studies. By bringing together experts from academia and industry, the

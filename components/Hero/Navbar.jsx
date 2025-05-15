@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import ECMI from "../../images/logos/ECMI_Logo.png";
-import ieee from "../../images/logos/ieee.png";
-import ieeeBng from "../../images/logos/ieee_bng.png";
-import ieeeSoci from "../../images/logos/ieee_soci.png";
+// import ieee from "../../images/logos/ieee.png";
+// import ieeeBng from "../../images/logos/ieee_bng.png";
+// import ieeeSoci from "../../images/logos/ieee_soci.png";
 import Animate from "../helpers/Animate-motion.jsx";
 import NavLinks from "./links";
 
@@ -16,7 +16,8 @@ const Navbar = () => {
     <header className="p-3 m-3 md:p-4 md:m-4 lg:p-5 lg:m-5">
       {/* Desktop menu */}
       <div className="flex flex-col gap-8 justify-between items-center">
-        <div className="flex justify-center lg:justify-start w-full">
+      {/* LOGO TO SHOW - IEEE LOGO AND MAKE ECMI LOGO TO 150 X 150*/}
+        {/* <div className="flex justify-center lg:justify-start w-full">
           <Animate delay={1} className="cursor-pointer flex gap-5 items-center mt-12 sm:mt-0">
             <Tilt tiltMaxAngleX={60} tiltMaxAngleY={40} scale={1.5} transitionSpeed={250}>
               <Image src={ieee} alt="ieee-Logo" width={100} height={100} priority={1} className="mt-2 mx-auto" />
@@ -28,11 +29,11 @@ const Navbar = () => {
               <Image src={ieeeSoci} alt="ieeeSoci-Logo" width={100} height={100} priority={1} className="mt-2 mx-auto" />
             </Tilt>
           </Animate>
-        </div>
+        </div> */}
 
         <div className="flex justify-center lg:justify-start w-full">
           <Animate delay={1} className="cursor-pointer flex gap-5">
-            <Image src={ECMI} alt="ECMI-Logo" width={150} height={150} priority={1} className="mt-2 mx-auto" />
+            <Image src={ECMI} alt="ECMI-Logo" width={200} height={200} priority={1} className="mt-2 mx-auto" />
           </Animate>
         </div>
 
