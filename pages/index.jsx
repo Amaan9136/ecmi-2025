@@ -4,9 +4,10 @@ import Committee from "../components/Committee/Index";
 import Conference from "../components/Conference/Index";
 import ContactUs from "../components/ContactUs/Index";
 import Footer from "../components/Footer/Index";
+import NeonGlowEffect from "../components/helpers/NeonGlowEffect";
 import Hero from "../components/Hero/Index";
 import Schedule from "../components/Schedule/Index";
-import NeonGlowEffect from "../components/helpers/NeonGlowEffect";
+import SubmissionGuidelines from "../components/SubmissionGuidelines/Index";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
         <AboutUs />
         <Committee />
         <Conference />
+        <SubmissionGuidelines />
         <Schedule />
         <ContactUs />
       </main>

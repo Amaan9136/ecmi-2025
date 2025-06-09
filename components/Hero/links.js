@@ -16,6 +16,10 @@ const navLinks = [
     redirect: "#conference",
   },
   {
+    content: "Submission Guidelines",
+    redirect: "#submission-guidelines",
+  },
+  {
     content: "Important Date",
     redirect: "#schedule",
   },

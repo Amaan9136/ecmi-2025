@@ -125,3 +125,12 @@ html {
     opacity: 0.7;
   }
 }
+
+/* Optional: Thin Scrollbar Style */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #fff1f1; /* gray-600 */
+  border-radius: 10px;
+}
