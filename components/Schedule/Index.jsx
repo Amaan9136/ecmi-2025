@@ -6,7 +6,7 @@ import { importantDates, paymentDetails, registrationDetails } from "./schedule"
 
 const Schedule = () => {
   const largeScreenRanges = [10500, 10600];
-  const smallScreenRanges = [19100, 19200];
+  const smallScreenRanges = [19800, 20000];
 
   const { scrollY } = useScroll();
   const [scrollRanges, setScrollRanges] = useState(largeScreenRanges);

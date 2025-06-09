@@ -13,7 +13,7 @@ const ContactUs = () => {
   ];
 
   const largeScreenRanges = [12100, 12200];
-  const smallScreenRanges = [18900, 19000];
+  const smallScreenRanges = [19900, 20500];
 
   const { scrollY } = useScroll();
   const [scrollRanges, setScrollRanges] = useState(largeScreenRanges);
