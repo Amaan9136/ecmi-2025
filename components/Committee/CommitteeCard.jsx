@@ -8,7 +8,7 @@ const CommitteeCard = ({ title, members }) => {
     <Tilt
       tiltMaxAngleX={1}
       tiltMaxAngleY={1}
-      className="relative w-96 p-8 rounded-3xl shadow-2xl
+      className="relative w-[400px] p-8 rounded-3xl shadow-2xl
                  bg-gradient-to-br from-gray-900 to-gray-800 
                  before:absolute before:inset-0 before:opacity-10 
                  hover:shadow-2xl transition-all duration-300 border-l-4 border-purple-400"

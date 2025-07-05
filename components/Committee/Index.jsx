@@ -12,7 +12,8 @@ const conferenceCommittee = {
   patron: [
     {
       name: "Sri Sri Gunanatha Swamiji",
-      designation: "Sri Adichunchanagiri Mahasamsthana Math, Chikkamagaluru Branch, Sringeri",
+      designation: "Sri Adichunchanagiri Mahasamsthana Math, Chikkamagaluru Branch",
+      place: "Sringeri"
     },
     {
       name: "Dr. N S Ramegowda",
@@ -32,8 +33,8 @@ const conferenceCommittee = {
   ],
   generalChair: [{
     name: "Dr. C T Jayadeva",
-    designation: "Principal, AIT, Chikkamagaluru",
-    place: "",
+    designation: "Principal, Adichunchanagiri Institute of Technology",
+    place: "Chikkamagaluru",
   }],
   organizingChair: [{
     name: "Prof. Goutham M A",
@@ -57,12 +58,12 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
     {
-      name: "Prof. RaghuKumar B S",
+      name: "Dr. RaghuKumar B S",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
   ],
-  publicationChair: [
+  publicationChairs: [
     {
       name: "Dr. Anil Kumar C",
       designation: "Associate Professor",
@@ -84,7 +85,7 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
   ],
-  publicityChair: [
+  publicityChairs: [
     {
       name: "Prof. Harish Kumar C R",
       designation: "Assistant Professor",
@@ -108,7 +109,7 @@ const conferenceCommittee = {
   ],
   webManagementCommittee: [
     {
-      name: "Prof. Rajappa H S",
+      name: "Dr. Rajappa H S",
       designation: "Assistant Professor",
       place: "Dept. of ECE, AIT",
     },
@@ -130,11 +131,31 @@ const conferenceCommittee = {
       place: "Dept. of ECE, AIT",
     },
   ],
-  technicalProgramChair:[
+  technicalProgramChairs:[
     { 
-    name: "Dr. A P Jagadeesh Chandra", 
+    name: "Dr. AP Jagadeesh Chandra", 
     designation: "Professor, Dept. of ECE", 
     institution: "AIT, Chikkamagaluru" 
+    },
+    { 
+      name: "Dr. Kumuda T", 
+      designation: "Professor, Dept. of ECE", 
+      institution: "AIT, Chikkamagaluru" 
+    },
+    { 
+      name: "Dr. H R Vani", 
+      designation: "Associate Professor, Dept. of ECE", 
+      institution: "AIT, Chikkamagaluru" 
+    },
+    { 
+      name: "Dr. Harish M S", 
+      designation: "Associate Professor, Dept. of ECE", 
+      institution: "AIT, Chikkamagaluru" 
+    },
+    { 
+      name: "Dr. Usha K P", 
+      designation: "Assistant Professor, Dept. of ECE", 
+      institution: "AIT, Chikkamagaluru" 
     }
   ],
 };
