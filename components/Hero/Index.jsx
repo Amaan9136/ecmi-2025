@@ -44,7 +44,7 @@ const Hero = () => {
                 >
                   <Typewriter
                     options={{
-                      strings: ["SMART ELECTRONICS", "MACHINE INFORMATICS"],
+                      strings: ["SMART ELECTRONICS", "INFORMATICS", "MACHINE INTELLIGENCE"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -124,7 +124,7 @@ const Hero = () => {
           {/* Countdown Timer */}
           <motion.p className="hidden lg:block mt-[-10rem] mb-[3.8rem] ml-3 text-lg">April 9ᵗʰ and 10ᵗʰ 2026</motion.p>
           <motion.div className="hidden lg:block max-w-[20rem]" style={{ opacity: counterOpacity, x: counterX, scale: scaleTitle }}>
-            <CounterContainer countDownLimit="2026-11-06T09:00:00" />
+            <CounterContainer countDownLimit="2026-04-09T09:00:00" />
           </motion.div>
         </Animate>
       </div>

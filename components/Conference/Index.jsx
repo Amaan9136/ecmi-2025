@@ -123,7 +123,7 @@ const ConferenceSection = () => {
               >
                 <div className="flex items-center space-x-2">
                   {track.icon}
-                  <h3 className="font-semibold">{track.title}</h3>
+                  <h3 className="font-semibold text-yellow-400">{track.title}</h3>
                 </div>
                 <ul className="p-4 pb-0 text-md list-disc list-outside">
                   {track.description.map((point, idx) => (
