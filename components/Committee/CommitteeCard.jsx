@@ -8,10 +8,7 @@ const CommitteeCard = ({ title, members }) => {
     <Tilt
       tiltMaxAngleX={1}
       tiltMaxAngleY={1}
-      className="relative w-[400px] p-8 rounded-3xl shadow-2xl
-                 bg-gradient-to-br from-gray-900 to-gray-800 
-                 before:absolute before:inset-0 before:opacity-10 
-                 hover:shadow-2xl transition-all duration-300 border-l-4 border-purple-400"
+      className="p-6 bg-gray-900 text-white rounded-xl shadow-sm border-l-4 border-purple-400 cursor-pointer w-[400px]"
     >
       <h2 className="text-white font-bold text-2xl mb-4 tracking-wide border-b border-purple-400 pb-2 uppercase">
         {title.replace(/([A-Z])/g, " $1").trim()}
@@ -41,15 +38,15 @@ const CommitteeCard = ({ title, members }) => {
                   ))}
                 </p>
               )}
-              {member.institution &&
+              {member.institution && (
                 <p className="text-gray-500 text-sm italic">{member.institution}</p>
-              }
-
+              )}
             </li>
           ) : (
-            <li key={index} className="text-white text-lg">• {member}</li>
+            <li key={index} className="text-white text-lg">
+              • {member}
+            </li>
           )
-
         )}
       </ul>
     </Tilt>

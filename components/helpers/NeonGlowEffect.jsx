@@ -1,6 +1,6 @@
-import { off, onValue, ref, remove, set } from 'firebase/database';
-import React, { useEffect, useState } from 'react';
-import { database } from '../../server/firebase';
+import { useEffect, useState } from 'react';
+// import { off, onValue, ref, remove, set } from 'firebase/database';
+// import { database } from '../../server/firebase';
 
 export default function NeonGlowEffect() {
   const [randomColor, setRandomColor] = useState('');
@@ -20,11 +20,11 @@ export default function NeonGlowEffect() {
   useEffect(() => {
     const checkDevice = () => {
       const width = window.innerWidth;
-      const isLaptopOrTablet = width >= 600; 
+      const isLaptopOrTablet = width >= 600;
       setIsSupportedDevice(isLaptopOrTablet);
     };
-    checkDevice(); 
-    window.addEventListener('resize', checkDevice); 
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
 
     return () => {
       window.removeEventListener('resize', checkDevice);
@@ -57,22 +57,22 @@ export default function NeonGlowEffect() {
       neonElement.style.left = `${e.pageX}px`;
       neonElement.style.top = `${e.pageY}px`;
 
-      if (uniqueUserId) {
-        set(ref(database, `users_cursor/${uniqueUserId}`), {
-          x: e.pageX,
-          y: e.pageY,
-          color: newColor,
-        });
-      }
+      // if (uniqueUserId) {
+      //   set(ref(database, `users_cursor/${uniqueUserId}`), {
+      //     x: e.pageX,
+      //     y: e.pageY,
+      //     color: newColor,
+      //   });
+      // }
     };
 
     window.addEventListener('mousemove', updatePosition);
 
     return () => {
       window.removeEventListener('mousemove', updatePosition);
-      if (uniqueUserId) {
-        remove(ref(database, `users_cursor/${uniqueUserId}`));
-      }
+      // if (uniqueUserId) {
+      //   remove(ref(database, `users_cursor/${uniqueUserId}`));
+      // }
       neonElement.remove();
     };
   }, [isSupportedDevice]);
@@ -80,23 +80,23 @@ export default function NeonGlowEffect() {
   useEffect(() => {
     if (!isSupportedDevice) return;
 
-    const usersRef = ref(database, 'users_cursor');
+    // const usersRef = ref(database, 'users_cursor');
 
-    const onChildAddedListener = onValue(usersRef, (snapshot) => {
-      let users = {};
-      snapshot.forEach((childSnapshot) => {
-        const user = childSnapshot.val();
-        const userId = childSnapshot.key;
+    // const onChildAddedListener = onValue(usersRef, (snapshot) => {
+    //   let users = {};
+    //   snapshot.forEach((childSnapshot) => {
+    //     const user = childSnapshot.val();
+    //     const userId = childSnapshot.key;
 
-        users[userId] = user;
-      });
+    //     users[userId] = user;
+    //   });
 
-      setUsersData(users);
-    });
+    //   setUsersData(users);
+    // });
 
-    return () => {
-      off(usersRef, 'value', onChildAddedListener);
-    };
+    // return () => {
+    //   off(usersRef, 'value', onChildAddedListener);
+    // };
   }, [isSupportedDevice]);
 
   useEffect(() => {
@@ -125,7 +125,7 @@ export default function NeonGlowEffect() {
 
     const handleVisibilityChange = () => {
       if (document.hidden && userId) {
-        remove(ref(database, `users_cursor/${userId}`));
+        // remove(ref(database, `users_cursor/${userId}`));
       }
     };
 
@@ -137,7 +137,7 @@ export default function NeonGlowEffect() {
   }, [userId, isSupportedDevice]);
 
   if (!isSupportedDevice) {
-    return null; 
+    return null;
   }
 
   return <></>;

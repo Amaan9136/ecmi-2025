@@ -95,11 +95,9 @@ const AboutUs = () => {
 
   return (
     <section className="relative lg:mb-28" id="about-us">
-      <div className="relative">
-
         <motion.div
           style={{ opacity: sectionOpacity }}
-          className="section-container pt-6 cursor-pointer"
+          className="section-container max-w-7xl mx-auto pt-6 cursor-pointer"
         >
           <SectionTitle title="About Us" />
           {data.map((element, index) => (
@@ -140,8 +138,6 @@ const AboutUs = () => {
           ))}
         </motion.div>
 
-
-      </div>
     </section>
   );
 };
