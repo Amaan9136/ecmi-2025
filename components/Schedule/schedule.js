@@ -1,7 +1,7 @@
 export const importantDates = [
   { event: "Call for Papers", date: "1ˢᵗ September 2025" },
-  { event: "Full Length Paper Submission", date: "1ˢᵗ November 2025" },
-  { event: "Acceptance Notification", date: "1ˢᵗ February 2026" },
+  { event: "Full Length Paper Submission", date: "15ᵗʰ December 2025" },
+  { event: "Acceptance Notification", date: "10ᵗʰ February 2026" },
   { event: "Final Paper Submission", date: "1ˢᵗ March 2026" },
   { event: "Last Date for Registration", date: "9ᵗʰ March 2026" },
   { event: "Conference Date", date: "9ᵗʰ and 10ᵗʰ April 2026" },

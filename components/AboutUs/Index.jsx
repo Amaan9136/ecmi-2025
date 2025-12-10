@@ -12,10 +12,17 @@ import SectionTitle from "../helpers/SectionTitle";
 
 const data = [
   {
-    title: "Sri Adichunchanagiri Shikshana Trust",
+    title: "Sri Adichunchanagiri Shikshana Trust®",
     paragraph:
       `Sri Adichunchanagiri Shikshana Trust (SAST) established in 1974, has been unwavering in its commitment to the nation’s development for over five decades. The trust currently operates 515 educational institutions that emphasize quality education and value-based learning, benefiting over 150,000 students across the country. These institutions provide education at all levels, from primary to professional courses, with a particular focus on serving the youth of semi-urban and rural areas. Notable institutions under the trust include those in the fields of Medicine, Engineering, Pharmacy, Ayurveda, General Degree Programs, Management, and Pre-University Education, in addition to an educational centre for destitute individuals, as well as those with physical or mental disabilities. \n Sri Adichunchanagiri Mahasamsthana Math located approximately 110 kilometres west of Bengaluru, Karnataka, is situated on a picturesque rocky hill. This scenic environment, enriched with lush green woods and tranquil lakes, offers a sanctified atmosphere conducive to meditation and spiritual reflection. At the heart of the math stands the Lord Gangadhareshwara temple, which serves as the primary place of worship. The math is also dedicated to promoting environmental conservation and the empowerment of women. It regularly organizes Jana Jagruthi Shibiras (mass awareness camps) and Mahila Sabalikaran Shibiras (women empowerment camps) in various cities, drawing substantial participation and earning widespread appreciation from the public.`,
-    highlights: [
+      highlights: [
+      "sri adichunchanagiri shikshana trust",
+      "sast",
+      "®",
+      "Padmabhushana Sri Sri Sri Dr. Balagangadharanath Maha Swamiji,",
+      "Sri Sri Sri Dr. Nirmalanandanatha Maha Swamiji.",
+      "operates 515 educational institutions",
+      "150,000 students across the country.",
       "established in 1974",
       "operates 515 educational institutions",
       "benefiting over 150,000 students",

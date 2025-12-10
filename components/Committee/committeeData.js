@@ -181,7 +181,7 @@ export const conferenceCommittee = {
 
 export const conferenceCommittee2 = {
   nationalAdvisoryCommittee: [
-    { name: "Dr. B E Rangaswamy", designation: "Registrar", institution: "VTU, Belagavi" },
+    { name: "Dr. Prasad B Rampure", designation: "Registrar", institution: "VTU, Belagavi" },
     { name: "Prof. S Y Kulkarni", designation: "Director, BNMIT, Bengaluru", institution: "Advisor, ACU, BG Nagara, Mandya" },
     { name: "Dr. E S Chakravarthy", designation: "Advisor", institution: "ACU, BG Nagara, Mandya" },
     { name: "Dr. Karunakara Rai", designation: "Professor", institution: "NMIT, Bengaluru" },

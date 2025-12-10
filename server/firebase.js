@@ -1,3 +1,5 @@
+// NEED TO REPLACE WITH NEW FIREBASE SDK
+
 import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
 
